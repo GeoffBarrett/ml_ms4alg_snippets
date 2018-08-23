@@ -107,4 +107,4 @@ venv.bak/
 .mypy_cache/
 
 # mountain sort files
-.mda
+*.mda
