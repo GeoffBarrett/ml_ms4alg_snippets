@@ -1,0 +1,2813 @@
+FileBase	E:\Apollo_D_Drive\ApolloKlusta\ANT 133a-4\20180530-ROUND-3300-NO-2
+ElecNo	3
+UseFeatures	1111111111111
+DropLastNFeatures	0
+UseDistributional	1
+MaskStarts	500
+MinClusters	100
+MaxClusters	110
+MaxPossibleClusters	30
+nStarts	1
+StartCluFile	
+SplitEvery	40
+SplitFirst	20
+PenaltyK	1.000000
+PenaltyKLogN	0.000000
+Subset	1
+FullStepEvery	20
+MaxIter	500
+RandomSeed	1
+Debug	256
+SplitInfo	1
+Verbose	1
+DistDump	0
+DistThresh	6.907755
+ChangedThresh	0.050000
+Log	1
+SaveTempCluEveryIter	0
+Screen	1
+PriorPoint	1
+SaveSorted	0
+SaveCovarianceMeans	0
+UseMaskedInitialConditions	1
+AssignToFirstClosestMask	1
+RamLimitGB	0.000000
+AlwaysSplitBimodal	0
+PointsForClusterMask	10.000000
+MinMaskOverlap	0.000000
+help	0
+help	0
+Starting KlustaKwik. Version: 0.3.0-nogit
+Setting RAM limit to total physical memory, 63.84 GB.
+-------------------------------------------------------------------------
+Using Distributional EM with Maskstarts
+NOTE: Maskstarts overides above values of MinClusters and MaxClusters                 
+MinClusters = 500 
+MaxClusters = 500 
+ 
+Expected memory usage by array (largest first):
+
+Array LogP will use between 0.07 and 0.10 GB.
+- 8 bytes per element (scalar), 4455300 elements when full.
+- Memory usage scales as MaxPossibleClusters*nPoints.
+Array AllVector2Mean will use between 0.03 and 0.04 GB.
+- 8 bytes per element (scalar), 1930630 elements when full.
+- Memory usage scales as nPoints*nDims.
+Array CorrectionTerm will use between 0.03 and 0.04 GB.
+- 8 bytes per element (scalar), 1930630 elements when full.
+- Memory usage scales as nPoints*nDims.
+Array Data will use between 0.01 and 0.01 GB.
+- 2 bytes per element (data_int), 1930630 elements when full.
+- Memory usage scales as nPoints*nDims.
+Array CharFloatMasks will use between 0.00 and 0.01 GB.
+- 1 bytes per element (char), 1930630 elements when full.
+- Memory usage scales as nPoints*nDims.
+Array Cov will use between 0.00 and 0.00 GB.
+- 8 bytes per element (scalar), 5070 elements when full.
+- Memory usage scales as MaxPossibleClusters*nDims*nDims.
+
+Note that nPoints=148510, nDims=13, MaxPossibleClusters=30
+Total memory usage will be between 0.13 and 0.20 GB.
+RAM limit is set at 63.84 GB.
+----------------------------------------------------------
+Loaded 148510 data points of dimension 13.
+MEMO: A lower score indicates a better clustering 
+ Masked EM: Computing Noise Means and Variances 
+ -----------------------------------------
+Starting from 500 clusters...
+------ Clustering full data set of 148510 points ------
+Starting initial clusters from distinct float masks 
+ Not enough masks (1) to generate starting clusters (500), so starting with (2) clusters instead.
+Assigned 2 initial classes from 1 unique masks.
+Iteration 0F (4.464000 sec): 2 clusters
+  Score: Raw -2687821.524558 + Penalty 420.000000 = -2687401.524558
+  nChanged 129
+Iteration 1Q (4.573000 sec): 2 clusters
+  Score: Raw -2688734.964089 + Penalty 420.000000 = -2688314.964089
+  nChanged 157
+Iteration 2Q (4.720000 sec): 2 clusters
+  Score: Raw -2688880.419146 + Penalty 420.000000 = -2688460.419146
+  nChanged 49
+Iteration 3Q (4.843000 sec): 2 clusters
+  Score: Raw -2688890.082497 + Penalty 420.000000 = -2688470.082497
+  nChanged 12
+Iteration 4Q (4.962000 sec): 2 clusters
+  Score: Raw -2688890.544875 + Penalty 420.000000 = -2688470.544875
+  nChanged 0
+Iteration 5F (5.072000 sec): 2 clusters
+  Score: Raw -2688890.544875 + Penalty 420.000000 = -2688470.544875
+  nChanged 0
+Compute initial score before splitting:   Score: Raw -2688890.544875 + Penalty 420.000000 = -2688470.544875
+
+ Trying to split cluster 1 (148163 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (5.539000 sec): 2 clusters
+  Score: Raw -2691338.642359 + Penalty 210.000000 = -2691128.642359
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (5.656000 sec): 3 clusters
+  Score: Raw -2591721.907405 + Penalty 420.000000 = -2591301.907405
+  nChanged 72694
+		SP:Iteration 1F (5.759000 sec): 3 clusters
+  Score: Raw -2635190.243203 + Penalty 420.000000 = -2634770.243203
+  nChanged 5514
+		SP:Iteration 2Q (5.876000 sec): 3 clusters
+  Score: Raw -2636585.498698 + Penalty 420.000000 = -2636165.498698
+  nChanged 5688
+		SP:Iteration 3Q (5.975000 sec): 3 clusters
+  Score: Raw -2638550.153844 + Penalty 420.000000 = -2638130.153844
+  nChanged 6904
+		SP:Iteration 4Q (6.077000 sec): 3 clusters
+  Score: Raw -2642052.417450 + Penalty 420.000000 = -2641632.417450
+  nChanged 9276
+		SP:Iteration 5F (6.209000 sec): 3 clusters
+  Score: Raw -2649000.072982 + Penalty 420.000000 = -2648580.072982
+  nChanged 12604
+		SP:Iteration 6F (6.316000 sec): 3 clusters
+  Score: Raw -2663173.834995 + Penalty 420.000000 = -2662753.834995
+  nChanged 15451
+		SP:Iteration 7F (6.427000 sec): 3 clusters
+  Score: Raw -2683197.010041 + Penalty 420.000000 = -2682777.010041
+  nChanged 13966
+		SP:Iteration 8F (6.567000 sec): 3 clusters
+  Score: Raw -2697366.842926 + Penalty 420.000000 = -2696946.842926
+  nChanged 8135
+		SP:Iteration 9F (6.719000 sec): 3 clusters
+  Score: Raw -2703799.524289 + Penalty 420.000000 = -2703379.524289
+  nChanged 4181
+		SP:Iteration 10Q (6.852000 sec): 3 clusters
+  Score: Raw -2706384.002482 + Penalty 420.000000 = -2705964.002482
+  nChanged 2723
+		SP:Iteration 11Q (6.969000 sec): 3 clusters
+  Score: Raw -2707764.018443 + Penalty 420.000000 = -2707344.018443
+  nChanged 1984
+		SP:Iteration 12Q (7.082000 sec): 3 clusters
+  Score: Raw -2708605.494523 + Penalty 420.000000 = -2708185.494523
+  nChanged 1553
+		SP:Iteration 13Q (7.202000 sec): 3 clusters
+  Score: Raw -2709148.326889 + Penalty 420.000000 = -2708728.326889
+  nChanged 1140
+		SP:Iteration 14Q (7.365000 sec): 3 clusters
+  Score: Raw -2709463.045257 + Penalty 420.000000 = -2709043.045257
+  nChanged 803
+		SP:Iteration 15Q (7.515000 sec): 3 clusters
+  Score: Raw -2709638.392392 + Penalty 420.000000 = -2709218.392392
+  nChanged 611
+		SP:Iteration 16Q (7.649000 sec): 3 clusters
+  Score: Raw -2709740.244502 + Penalty 420.000000 = -2709320.244502
+  nChanged 433
+		SP:Iteration 17Q (7.772000 sec): 3 clusters
+  Score: Raw -2709796.111955 + Penalty 420.000000 = -2709376.111955
+  nChanged 332
+		SP:Iteration 18Q (7.903000 sec): 3 clusters
+  Score: Raw -2709832.772973 + Penalty 420.000000 = -2709412.772973
+  nChanged 290
+		SP:Iteration 19Q (8.042000 sec): 3 clusters
+  Score: Raw -2709859.107304 + Penalty 420.000000 = -2709439.107304
+  nChanged 214
+		SP:Iteration 20F (8.164000 sec): 3 clusters
+  Score: Raw -2709875.428126 + Penalty 420.000000 = -2709455.428126
+  nChanged 164
+		SP:Iteration 21Q (8.298000 sec): 3 clusters
+  Score: Raw -2709885.823667 + Penalty 420.000000 = -2709465.823667
+  nChanged 131
+		SP:Iteration 22Q (8.415000 sec): 3 clusters
+  Score: Raw -2709892.441728 + Penalty 420.000000 = -2709472.441728
+  nChanged 100
+		SP:Iteration 23Q (8.548000 sec): 3 clusters
+  Score: Raw -2709896.524265 + Penalty 420.000000 = -2709476.524265
+  nChanged 88
+		SP:Iteration 24Q (8.670000 sec): 3 clusters
+  Score: Raw -2709899.626597 + Penalty 420.000000 = -2709479.626597
+  nChanged 65
+		SP:Iteration 25Q (8.826000 sec): 3 clusters
+  Score: Raw -2709901.489421 + Penalty 420.000000 = -2709481.489421
+  nChanged 49
+		SP:Iteration 26Q (8.944000 sec): 3 clusters
+  Score: Raw -2709902.541034 + Penalty 420.000000 = -2709482.541034
+  nChanged 30
+		SP:Iteration 27Q (9.065000 sec): 3 clusters
+  Score: Raw -2709903.084305 + Penalty 420.000000 = -2709483.084305
+  nChanged 28
+		SP:Iteration 28Q (9.223000 sec): 3 clusters
+  Score: Raw -2709903.545868 + Penalty 420.000000 = -2709483.545868
+  nChanged 20
+		SP:Iteration 29Q (9.343000 sec): 3 clusters
+  Score: Raw -2709903.806829 + Penalty 420.000000 = -2709483.806829
+  nChanged 21
+		SP:Iteration 30Q (9.485000 sec): 3 clusters
+  Score: Raw -2709904.053479 + Penalty 420.000000 = -2709484.053479
+  nChanged 17
+		SP:Iteration 31Q (9.611000 sec): 3 clusters
+  Score: Raw -2709904.201789 + Penalty 420.000000 = -2709484.201789
+  nChanged 7
+		SP:Iteration 32Q (9.740000 sec): 3 clusters
+  Score: Raw -2709904.263626 + Penalty 420.000000 = -2709484.263626
+  nChanged 5
+		SP:Iteration 33Q (9.856000 sec): 3 clusters
+  Score: Raw -2709904.301618 + Penalty 420.000000 = -2709484.301618
+  nChanged 3
+		SP:Iteration 34Q (9.988000 sec): 3 clusters
+  Score: Raw -2709904.335175 + Penalty 420.000000 = -2709484.335175
+  nChanged 3
+		SP:Iteration 35Q (10.122000 sec): 3 clusters
+  Score: Raw -2709904.361274 + Penalty 420.000000 = -2709484.361274
+  nChanged 4
+		SP:Iteration 36Q (10.273000 sec): 3 clusters
+  Score: Raw -2709904.410854 + Penalty 420.000000 = -2709484.410854
+  nChanged 3
+		SP:Iteration 37Q (10.458000 sec): 3 clusters
+  Score: Raw -2709904.434797 + Penalty 420.000000 = -2709484.434797
+  nChanged 2
+		SP:Iteration 38Q (10.597000 sec): 3 clusters
+  Score: Raw -2709904.443868 + Penalty 420.000000 = -2709484.443868
+  nChanged 3
+		SP:Iteration 39Q (10.741000 sec): 3 clusters
+  Score: Raw -2709904.460743 + Penalty 420.000000 = -2709484.460743
+  nChanged 4
+		SP:Iteration 40F (10.921000 sec): 3 clusters
+  Score: Raw -2709904.493130 + Penalty 420.000000 = -2709484.493130
+  nChanged 6
+		SP:Iteration 41Q (11.090000 sec): 3 clusters
+  Score: Raw -2709904.550921 + Penalty 420.000000 = -2709484.550921
+  nChanged 5
+		SP:Iteration 42Q (11.203000 sec): 3 clusters
+  Score: Raw -2709904.585641 + Penalty 420.000000 = -2709484.585641
+  nChanged 3
+		SP:Iteration 43Q (11.315000 sec): 3 clusters
+  Score: Raw -2709904.625057 + Penalty 420.000000 = -2709484.625057
+  nChanged 3
+		SP:Iteration 44Q (11.521000 sec): 3 clusters
+  Score: Raw -2709904.660345 + Penalty 420.000000 = -2709484.660345
+  nChanged 3
+		SP:Iteration 45Q (11.682000 sec): 3 clusters
+  Score: Raw -2709904.680310 + Penalty 420.000000 = -2709484.680310
+  nChanged 2
+		SP:Iteration 46Q (11.803000 sec): 3 clusters
+  Score: Raw -2709904.688721 + Penalty 420.000000 = -2709484.688721
+  nChanged 0
+		SP:Iteration 47F (11.926000 sec): 3 clusters
+  Score: Raw -2709904.688721 + Penalty 420.000000 = -2709484.688721
+  nChanged 0
+  Score: Raw -2707456.591257 + Penalty 630.000000 = -2706826.591257
+
+Splitting cluster 1 changes total score from -2688470.544875 to -2706826.591257
+
+ So it's getting split into cluster 2.
+Iteration 6F (12.222000 sec): 3 clusters
+  Score: Raw -2710139.027519 + Penalty 630.000000 = -2709509.027519
+  nChanged 272
+Iteration 7Q (12.400000 sec): 3 clusters
+  Score: Raw -2710699.534962 + Penalty 630.000000 = -2710069.534962
+  nChanged 368
+Iteration 8Q (12.522000 sec): 3 clusters
+  Score: Raw -2710829.859543 + Penalty 630.000000 = -2710199.859543
+  nChanged 296
+Iteration 9Q (12.645000 sec): 3 clusters
+  Score: Raw -2710872.799706 + Penalty 630.000000 = -2710242.799706
+  nChanged 190
+Iteration 10Q (12.791000 sec): 3 clusters
+  Score: Raw -2710887.294947 + Penalty 630.000000 = -2710257.294947
+  nChanged 133
+Iteration 11Q (12.972000 sec): 3 clusters
+  Score: Raw -2710894.998346 + Penalty 630.000000 = -2710264.998346
+  nChanged 108
+Iteration 12Q (13.149000 sec): 3 clusters
+  Score: Raw -2710899.762304 + Penalty 630.000000 = -2710269.762304
+  nChanged 87
+Iteration 13Q (13.258000 sec): 3 clusters
+  Score: Raw -2710903.088086 + Penalty 630.000000 = -2710273.088086
+  nChanged 48
+Iteration 14Q (13.461000 sec): 3 clusters
+  Score: Raw -2710904.131267 + Penalty 630.000000 = -2710274.131267
+  nChanged 27
+Iteration 15Q (13.630000 sec): 3 clusters
+  Score: Raw -2710904.519410 + Penalty 630.000000 = -2710274.519410
+  nChanged 14
+Iteration 16Q (13.770000 sec): 3 clusters
+  Score: Raw -2710904.662047 + Penalty 630.000000 = -2710274.662047
+  nChanged 11
+Iteration 17Q (13.885000 sec): 3 clusters
+  Score: Raw -2710904.770173 + Penalty 630.000000 = -2710274.770173
+  nChanged 10
+Iteration 18Q (14.001000 sec): 3 clusters
+  Score: Raw -2710904.849156 + Penalty 630.000000 = -2710274.849156
+  nChanged 8
+Iteration 19Q (14.139000 sec): 3 clusters
+  Score: Raw -2710904.926370 + Penalty 630.000000 = -2710274.926370
+  nChanged 7
+Writing temp clu file 
+Because OldScore, -2710274.849156, is greater than current (better) Score,-2710274.926370 
+ Compute initial score before splitting:   Score: Raw -2710904.926370 + Penalty 630.000000 = -2710274.926370
+
+ Trying to split cluster 1 (140376 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (14.532000 sec): 2 clusters
+  Score: Raw -2615925.897541 + Penalty 210.000000 = -2615715.897541
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (14.658000 sec): 3 clusters
+  Score: Raw -2521649.046227 + Penalty 420.000000 = -2521229.046227
+  nChanged 68847
+		SP:Iteration 1F (14.762000 sec): 3 clusters
+  Score: Raw -2561878.785048 + Penalty 420.000000 = -2561458.785048
+  nChanged 4222
+		SP:Iteration 2Q (14.877000 sec): 3 clusters
+  Score: Raw -2562744.065696 + Penalty 420.000000 = -2562324.065696
+  nChanged 4625
+		SP:Iteration 3Q (14.983000 sec): 3 clusters
+  Score: Raw -2563914.456047 + Penalty 420.000000 = -2563494.456047
+  nChanged 5530
+		SP:Iteration 4Q (15.089000 sec): 3 clusters
+  Score: Raw -2565742.626099 + Penalty 420.000000 = -2565322.626099
+  nChanged 6812
+		SP:Iteration 5Q (15.205000 sec): 3 clusters
+  Score: Raw -2568816.215598 + Penalty 420.000000 = -2568396.215598
+  nChanged 8745
+		SP:Iteration 6F (15.312000 sec): 3 clusters
+  Score: Raw -2574252.066825 + Penalty 420.000000 = -2573832.066825
+  nChanged 10772
+		SP:Iteration 7F (15.427000 sec): 3 clusters
+  Score: Raw -2583088.946821 + Penalty 420.000000 = -2582668.946821
+  nChanged 11326
+		SP:Iteration 8F (15.523000 sec): 3 clusters
+  Score: Raw -2594007.046725 + Penalty 420.000000 = -2593587.046725
+  nChanged 9321
+		SP:Iteration 9F (15.623000 sec): 3 clusters
+  Score: Raw -2603430.728758 + Penalty 420.000000 = -2603010.728758
+  nChanged 5897
+		SP:Iteration 10Q (15.735000 sec): 3 clusters
+  Score: Raw -2609158.190157 + Penalty 420.000000 = -2608738.190157
+  nChanged 3235
+		SP:Iteration 11Q (15.837000 sec): 3 clusters
+  Score: Raw -2612093.334637 + Penalty 420.000000 = -2611673.334637
+  nChanged 1827
+		SP:Iteration 12Q (15.939000 sec): 3 clusters
+  Score: Raw -2613606.207757 + Penalty 420.000000 = -2613186.207757
+  nChanged 1091
+		SP:Iteration 13Q (16.046000 sec): 3 clusters
+  Score: Raw -2614399.129498 + Penalty 420.000000 = -2613979.129498
+  nChanged 697
+		SP:Iteration 14Q (16.187000 sec): 3 clusters
+  Score: Raw -2614846.050816 + Penalty 420.000000 = -2614426.050816
+  nChanged 537
+		SP:Iteration 15Q (16.299000 sec): 3 clusters
+  Score: Raw -2615167.345499 + Penalty 420.000000 = -2614747.345499
+  nChanged 414
+		SP:Iteration 16Q (16.411000 sec): 3 clusters
+  Score: Raw -2615382.642355 + Penalty 420.000000 = -2614962.642355
+  nChanged 303
+		SP:Iteration 17Q (16.511000 sec): 3 clusters
+  Score: Raw -2615530.342663 + Penalty 420.000000 = -2615110.342663
+  nChanged 248
+		SP:Iteration 18Q (16.631000 sec): 3 clusters
+  Score: Raw -2615656.682106 + Penalty 420.000000 = -2615236.682106
+  nChanged 202
+		SP:Iteration 19Q (16.767000 sec): 3 clusters
+  Score: Raw -2615762.769531 + Penalty 420.000000 = -2615342.769531
+  nChanged 166
+		SP:Iteration 20F (16.893000 sec): 3 clusters
+  Score: Raw -2615861.027458 + Penalty 420.000000 = -2615441.027458
+  nChanged 144
+		SP:Iteration 21Q (17.008000 sec): 3 clusters
+  Score: Raw -2615966.802878 + Penalty 420.000000 = -2615546.802878
+  nChanged 116
+		SP:Iteration 22Q (17.142000 sec): 3 clusters
+  Score: Raw -2616071.194015 + Penalty 420.000000 = -2615651.194015
+  nChanged 67
+		SP:Iteration 23Q (17.297000 sec): 3 clusters
+  Score: Raw -2616127.873323 + Penalty 420.000000 = -2615707.873323
+  nChanged 50
+		SP:Iteration 24Q (17.419000 sec): 3 clusters
+  Score: Raw -2616156.954295 + Penalty 420.000000 = -2615736.954295
+  nChanged 45
+		SP:Iteration 25Q (17.614000 sec): 3 clusters
+  Score: Raw -2616180.131922 + Penalty 420.000000 = -2615760.131922
+  nChanged 39
+		SP:Iteration 26Q (17.755000 sec): 3 clusters
+  Score: Raw -2616201.848264 + Penalty 420.000000 = -2615781.848264
+  nChanged 32
+		SP:Iteration 27Q (17.898000 sec): 3 clusters
+  Score: Raw -2616218.629659 + Penalty 420.000000 = -2615798.629659
+  nChanged 31
+		SP:Iteration 28Q (18.044000 sec): 3 clusters
+  Score: Raw -2616233.683814 + Penalty 420.000000 = -2615813.683814
+  nChanged 29
+		SP:Iteration 29Q (18.190000 sec): 3 clusters
+  Score: Raw -2616246.035691 + Penalty 420.000000 = -2615826.035691
+  nChanged 22
+		SP:Iteration 30Q (18.353000 sec): 3 clusters
+  Score: Raw -2616255.700226 + Penalty 420.000000 = -2615835.700226
+  nChanged 16
+		SP:Iteration 31Q (18.500000 sec): 3 clusters
+  Score: Raw -2616260.300977 + Penalty 420.000000 = -2615840.300977
+  nChanged 18
+		SP:Iteration 32Q (18.640000 sec): 3 clusters
+  Score: Raw -2616264.758464 + Penalty 420.000000 = -2615844.758464
+  nChanged 5
+		SP:Iteration 33Q (18.781000 sec): 3 clusters
+  Score: Raw -2616266.076709 + Penalty 420.000000 = -2615846.076709
+  nChanged 11
+		SP:Iteration 34Q (18.932000 sec): 3 clusters
+  Score: Raw -2616268.765268 + Penalty 420.000000 = -2615848.765268
+  nChanged 8
+		SP:Iteration 35Q (19.068000 sec): 3 clusters
+  Score: Raw -2616270.884607 + Penalty 420.000000 = -2615850.884607
+  nChanged 8
+		SP:Iteration 36Q (19.204000 sec): 3 clusters
+  Score: Raw -2616273.362280 + Penalty 420.000000 = -2615853.362280
+  nChanged 9
+		SP:Iteration 37Q (19.381000 sec): 3 clusters
+  Score: Raw -2616275.915462 + Penalty 420.000000 = -2615855.915462
+  nChanged 5
+		SP:Iteration 38Q (19.500000 sec): 3 clusters
+  Score: Raw -2616277.393488 + Penalty 420.000000 = -2615857.393488
+  nChanged 6
+		SP:Iteration 39Q (19.654000 sec): 3 clusters
+  Score: Raw -2616278.922328 + Penalty 420.000000 = -2615858.922328
+  nChanged 4
+		SP:Iteration 40F (19.808000 sec): 3 clusters
+  Score: Raw -2616281.452626 + Penalty 420.000000 = -2615861.452626
+  nChanged 4
+		SP:Iteration 41Q (19.953000 sec): 3 clusters
+  Score: Raw -2616282.959582 + Penalty 420.000000 = -2615862.959582
+  nChanged 6
+		SP:Iteration 42Q (20.101000 sec): 3 clusters
+  Score: Raw -2616284.238523 + Penalty 420.000000 = -2615864.238523
+  nChanged 5
+		SP:Iteration 43Q (20.257000 sec): 3 clusters
+  Score: Raw -2616285.438375 + Penalty 420.000000 = -2615865.438375
+  nChanged 6
+		SP:Iteration 44Q (20.407000 sec): 3 clusters
+  Score: Raw -2616286.706498 + Penalty 420.000000 = -2615866.706498
+  nChanged 4
+		SP:Iteration 45Q (20.554000 sec): 3 clusters
+  Score: Raw -2616289.361444 + Penalty 420.000000 = -2615869.361444
+  nChanged 8
+		SP:Iteration 46Q (20.703000 sec): 3 clusters
+  Score: Raw -2616291.397217 + Penalty 420.000000 = -2615871.397217
+  nChanged 4
+		SP:Iteration 47Q (20.862000 sec): 3 clusters
+  Score: Raw -2616292.290189 + Penalty 420.000000 = -2615872.290189
+  nChanged 1
+		SP:Iteration 48Q (20.996000 sec): 3 clusters
+  Score: Raw -2616292.447380 + Penalty 420.000000 = -2615872.447380
+  nChanged 0
+		SP:Iteration 49F (21.223000 sec): 3 clusters
+  Score: Raw -2616292.447380 + Penalty 420.000000 = -2615872.447380
+  nChanged 0
+  Score: Raw -2711271.520709 + Penalty 840.000000 = -2710431.520709
+
+Splitting cluster 1 changes total score from -2710274.926370 to -2710431.520709
+
+ So it's getting split into cluster 3.
+
+ Trying to split cluster 2 (8111 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (21.440000 sec): 2 clusters
+  Score: Raw -126668.111131 + Penalty 210.000000 = -126458.111131
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (21.447000 sec): 3 clusters
+  Score: Raw -121746.616246 + Penalty 420.000000 = -121326.616246
+  nChanged 3764
+		SP:Iteration 1F (21.469000 sec): 3 clusters
+  Score: Raw -125539.164946 + Penalty 420.000000 = -125119.164946
+  nChanged 1129
+		SP:Iteration 2F (21.475000 sec): 3 clusters
+  Score: Raw -126828.968712 + Penalty 420.000000 = -126408.968712
+  nChanged 779
+		SP:Iteration 3F (21.554000 sec): 3 clusters
+  Score: Raw -127637.434312 + Penalty 420.000000 = -127217.434312
+  nChanged 469
+		SP:Iteration 4F (21.592000 sec): 3 clusters
+  Score: Raw -128026.005923 + Penalty 420.000000 = -127606.005923
+  nChanged 246
+		SP:Iteration 5Q (21.599000 sec): 3 clusters
+  Score: Raw -128170.697390 + Penalty 420.000000 = -127750.697390
+  nChanged 145
+		SP:Iteration 6Q (21.606000 sec): 3 clusters
+  Score: Raw -128239.053905 + Penalty 420.000000 = -127819.053905
+  nChanged 104
+		SP:Iteration 7Q (21.613000 sec): 3 clusters
+  Score: Raw -128279.519890 + Penalty 420.000000 = -127859.519890
+  nChanged 94
+		SP:Iteration 8Q (21.631000 sec): 3 clusters
+  Score: Raw -128310.406438 + Penalty 420.000000 = -127890.406438
+  nChanged 90
+		SP:Iteration 9Q (21.638000 sec): 3 clusters
+  Score: Raw -128338.982844 + Penalty 420.000000 = -127918.982844
+  nChanged 66
+		SP:Iteration 10Q (21.674000 sec): 3 clusters
+  Score: Raw -128358.044312 + Penalty 420.000000 = -127938.044312
+  nChanged 68
+		SP:Iteration 11Q (21.741000 sec): 3 clusters
+  Score: Raw -128381.278362 + Penalty 420.000000 = -127961.278362
+  nChanged 57
+		SP:Iteration 12Q (21.748000 sec): 3 clusters
+  Score: Raw -128405.196485 + Penalty 420.000000 = -127985.196485
+  nChanged 63
+		SP:Iteration 13Q (21.755000 sec): 3 clusters
+  Score: Raw -128435.663597 + Penalty 420.000000 = -128015.663597
+  nChanged 62
+		SP:Iteration 14Q (21.761000 sec): 3 clusters
+  Score: Raw -128471.457313 + Penalty 420.000000 = -128051.457313
+  nChanged 65
+		SP:Iteration 15Q (21.782000 sec): 3 clusters
+  Score: Raw -128504.352037 + Penalty 420.000000 = -128084.352037
+  nChanged 57
+		SP:Iteration 16Q (21.789000 sec): 3 clusters
+  Score: Raw -128531.200454 + Penalty 420.000000 = -128111.200454
+  nChanged 52
+		SP:Iteration 17Q (21.822000 sec): 3 clusters
+  Score: Raw -128559.461870 + Penalty 420.000000 = -128139.461870
+  nChanged 46
+		SP:Iteration 18Q (21.889000 sec): 3 clusters
+  Score: Raw -128585.775224 + Penalty 420.000000 = -128165.775224
+  nChanged 50
+		SP:Iteration 19Q (21.895000 sec): 3 clusters
+  Score: Raw -128607.552369 + Penalty 420.000000 = -128187.552369
+  nChanged 30
+		SP:Iteration 20F (21.903000 sec): 3 clusters
+  Score: Raw -128624.263725 + Penalty 420.000000 = -128204.263725
+  nChanged 34
+		SP:Iteration 21Q (21.910000 sec): 3 clusters
+  Score: Raw -128636.701047 + Penalty 420.000000 = -128216.701047
+  nChanged 25
+		SP:Iteration 22Q (21.928000 sec): 3 clusters
+  Score: Raw -128646.291825 + Penalty 420.000000 = -128226.291825
+  nChanged 25
+		SP:Iteration 23Q (21.934000 sec): 3 clusters
+  Score: Raw -128655.902975 + Penalty 420.000000 = -128235.902975
+  nChanged 31
+		SP:Iteration 24Q (21.941000 sec): 3 clusters
+  Score: Raw -128670.596409 + Penalty 420.000000 = -128250.596409
+  nChanged 26
+		SP:Iteration 25Q (22.022000 sec): 3 clusters
+  Score: Raw -128688.622584 + Penalty 420.000000 = -128268.622584
+  nChanged 30
+		SP:Iteration 26Q (22.045000 sec): 3 clusters
+  Score: Raw -128709.145339 + Penalty 420.000000 = -128289.145339
+  nChanged 32
+		SP:Iteration 27Q (22.052000 sec): 3 clusters
+  Score: Raw -128738.266478 + Penalty 420.000000 = -128318.266478
+  nChanged 26
+		SP:Iteration 28Q (22.059000 sec): 3 clusters
+  Score: Raw -128778.784454 + Penalty 420.000000 = -128358.784454
+  nChanged 37
+		SP:Iteration 29Q (22.066000 sec): 3 clusters
+  Score: Raw -128889.739700 + Penalty 420.000000 = -128469.739700
+  nChanged 56
+		SP:Iteration 30Q (22.087000 sec): 3 clusters
+  Score: Raw -129331.096159 + Penalty 420.000000 = -128911.096159
+  nChanged 59
+		SP:Iteration 31Q (22.094000 sec): 3 clusters
+  Score: Raw -130053.288361 + Penalty 420.000000 = -129633.288361
+  nChanged 88
+		SP:Iteration 32Q (22.140000 sec): 3 clusters
+  Score: Raw -130243.947563 + Penalty 420.000000 = -129823.947563
+  nChanged 74
+		SP:Iteration 33Q (22.200000 sec): 3 clusters
+  Score: Raw -130328.161124 + Penalty 420.000000 = -129908.161124
+  nChanged 40
+		SP:Iteration 34Q (22.206000 sec): 3 clusters
+  Score: Raw -130367.978719 + Penalty 420.000000 = -129947.978719
+  nChanged 23
+		SP:Iteration 35Q (22.212000 sec): 3 clusters
+  Score: Raw -130386.652771 + Penalty 420.000000 = -129966.652771
+  nChanged 12
+		SP:Iteration 36Q (22.220000 sec): 3 clusters
+  Score: Raw -130395.881987 + Penalty 420.000000 = -129975.881987
+  nChanged 11
+		SP:Iteration 37Q (22.226000 sec): 3 clusters
+  Score: Raw -130409.080483 + Penalty 420.000000 = -129989.080483
+  nChanged 13
+		SP:Iteration 38Q (22.245000 sec): 3 clusters
+  Score: Raw -130427.302291 + Penalty 420.000000 = -130007.302291
+  nChanged 13
+		SP:Iteration 39Q (22.252000 sec): 3 clusters
+  Score: Raw -130434.090946 + Penalty 420.000000 = -130014.090946
+  nChanged 7
+		SP:Iteration 40F (22.258000 sec): 3 clusters
+  Score: Raw -130440.128781 + Penalty 420.000000 = -130020.128781
+  nChanged 7
+		SP:Iteration 41Q (22.355000 sec): 3 clusters
+  Score: Raw -130442.372485 + Penalty 420.000000 = -130022.372485
+  nChanged 4
+		SP:Iteration 42Q (22.362000 sec): 3 clusters
+  Score: Raw -130442.780036 + Penalty 420.000000 = -130022.780036
+  nChanged 1
+		SP:Iteration 43Q (22.369000 sec): 3 clusters
+  Score: Raw -130442.849948 + Penalty 420.000000 = -130022.849948
+  nChanged 0
+		SP:Iteration 44F (22.376000 sec): 3 clusters
+  Score: Raw -130442.849948 + Penalty 420.000000 = -130022.849948
+  nChanged 0
+  Score: Raw -2715046.259249 + Penalty 1050.000000 = -2713996.259249
+
+Splitting cluster 2 changes total score from -2710274.926370 to -2713996.259249
+
+ So it's getting split into cluster 4.
+Iteration 20F (22.711000 sec): 5 clusters
+  Score: Raw -2715917.154240 + Penalty 1050.000000 = -2714867.154240
+  nChanged 848
+Iteration 21Q (22.864000 sec): 5 clusters
+  Score: Raw -2716222.787869 + Penalty 1050.000000 = -2715172.787869
+  nChanged 367
+Iteration 22Q (23.041000 sec): 5 clusters
+  Score: Raw -2716306.834624 + Penalty 1050.000000 = -2715256.834624
+  nChanged 209
+Iteration 23Q (23.218000 sec): 5 clusters
+  Score: Raw -2716344.855555 + Penalty 1050.000000 = -2715294.855555
+  nChanged 154
+Iteration 24Q (23.390000 sec): 5 clusters
+  Score: Raw -2716367.620536 + Penalty 1050.000000 = -2715317.620536
+  nChanged 124
+Iteration 25Q (23.551000 sec): 5 clusters
+  Score: Raw -2716393.834482 + Penalty 1050.000000 = -2715343.834482
+  nChanged 128
+Iteration 26Q (23.706000 sec): 5 clusters
+  Score: Raw -2716429.452421 + Penalty 1050.000000 = -2715379.452421
+  nChanged 97
+Iteration 27Q (23.919000 sec): 5 clusters
+  Score: Raw -2716451.356751 + Penalty 1050.000000 = -2715401.356751
+  nChanged 93
+Iteration 28Q (24.055000 sec): 5 clusters
+  Score: Raw -2716468.190414 + Penalty 1050.000000 = -2715418.190414
+  nChanged 75
+Iteration 29Q (24.306000 sec): 5 clusters
+  Score: Raw -2716480.426546 + Penalty 1050.000000 = -2715430.426546
+  nChanged 57
+Iteration 30Q (24.501000 sec): 5 clusters
+  Score: Raw -2716489.503913 + Penalty 1050.000000 = -2715439.503913
+  nChanged 57
+Iteration 31Q (24.659000 sec): 5 clusters
+  Score: Raw -2716497.618501 + Penalty 1050.000000 = -2715447.618501
+  nChanged 58
+Iteration 32Q (24.837000 sec): 5 clusters
+  Score: Raw -2716508.480931 + Penalty 1050.000000 = -2715458.480931
+  nChanged 43
+Iteration 33Q (25.112000 sec): 5 clusters
+  Score: Raw -2716513.918437 + Penalty 1050.000000 = -2715463.918437
+  nChanged 40
+Iteration 34Q (25.358000 sec): 5 clusters
+  Score: Raw -2716517.846276 + Penalty 1050.000000 = -2715467.846276
+  nChanged 29
+Iteration 35Q (25.508000 sec): 5 clusters
+  Score: Raw -2716520.337911 + Penalty 1050.000000 = -2715470.337911
+  nChanged 27
+Iteration 36Q (25.782000 sec): 5 clusters
+  Score: Raw -2716522.121704 + Penalty 1050.000000 = -2715472.121704
+  nChanged 21
+Iteration 37Q (25.980000 sec): 5 clusters
+  Score: Raw -2716524.598208 + Penalty 1050.000000 = -2715474.598208
+  nChanged 22
+Iteration 38Q (26.154000 sec): 5 clusters
+  Score: Raw -2716525.624782 + Penalty 1050.000000 = -2715475.624782
+  nChanged 21
+Iteration 39Q (26.382000 sec): 5 clusters
+  Score: Raw -2716526.734740 + Penalty 1050.000000 = -2715476.734740
+  nChanged 15
+Iteration 40F (26.646000 sec): 5 clusters
+  Score: Raw -2716544.324158 + Penalty 1050.000000 = -2715494.324158
+  nChanged 36
+Iteration 41Q (26.799000 sec): 5 clusters
+  Score: Raw -2716555.405441 + Penalty 1050.000000 = -2715505.405441
+  nChanged 41
+Iteration 42Q (26.989000 sec): 5 clusters
+  Score: Raw -2716567.753604 + Penalty 1050.000000 = -2715517.753604
+  nChanged 62
+Iteration 43Q (27.154000 sec): 5 clusters
+  Score: Raw -2716582.403811 + Penalty 1050.000000 = -2715532.403811
+  nChanged 98
+Iteration 44Q (27.398000 sec): 5 clusters
+  Score: Raw -2716594.640980 + Penalty 1050.000000 = -2715544.640980
+  nChanged 86
+Iteration 45Q (27.574000 sec): 5 clusters
+  Score: Raw -2716605.470453 + Penalty 1050.000000 = -2715555.470453
+  nChanged 79
+Iteration 46Q (27.827000 sec): 5 clusters
+  Score: Raw -2716612.013929 + Penalty 1050.000000 = -2715562.013929
+  nChanged 50
+Iteration 47Q (28.068000 sec): 5 clusters
+  Score: Raw -2716618.027812 + Penalty 1050.000000 = -2715568.027812
+  nChanged 41
+Iteration 48Q (28.244000 sec): 5 clusters
+  Score: Raw -2716624.331416 + Penalty 1050.000000 = -2715574.331416
+  nChanged 37
+Iteration 49Q (28.394000 sec): 5 clusters
+  Score: Raw -2716627.582190 + Penalty 1050.000000 = -2715577.582190
+  nChanged 30
+Iteration 50Q (28.605000 sec): 5 clusters
+  Score: Raw -2716629.150401 + Penalty 1050.000000 = -2715579.150401
+  nChanged 30
+Iteration 51Q (28.812000 sec): 5 clusters
+  Score: Raw -2716630.838763 + Penalty 1050.000000 = -2715580.838763
+  nChanged 29
+Iteration 52Q (29.018000 sec): 5 clusters
+  Score: Raw -2716632.570816 + Penalty 1050.000000 = -2715582.570816
+  nChanged 21
+Iteration 53Q (29.260000 sec): 5 clusters
+  Score: Raw -2716633.647371 + Penalty 1050.000000 = -2715583.647371
+  nChanged 19
+Iteration 54Q (29.484000 sec): 5 clusters
+  Score: Raw -2716635.071593 + Penalty 1050.000000 = -2715585.071593
+  nChanged 17
+Iteration 55Q (29.712000 sec): 5 clusters
+  Score: Raw -2716636.528809 + Penalty 1050.000000 = -2715586.528809
+  nChanged 17
+Iteration 56Q (29.912000 sec): 5 clusters
+  Score: Raw -2716637.392209 + Penalty 1050.000000 = -2715587.392209
+  nChanged 19
+Iteration 57Q (30.118000 sec): 5 clusters
+  Score: Raw -2716638.516659 + Penalty 1050.000000 = -2715588.516659
+  nChanged 17
+Iteration 58Q (30.254000 sec): 5 clusters
+  Score: Raw -2716639.658105 + Penalty 1050.000000 = -2715589.658105
+  nChanged 11
+Writing temp clu file 
+Because OldScore, -2715588.516659, is greater than current (better) Score,-2715589.658105 
+ Compute initial score before splitting:   Score: Raw -2716639.658105 + Penalty 1050.000000 = -2715589.658105
+
+ Trying to split cluster 1 (138110 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (30.650000 sec): 2 clusters
+  Score: Raw -2583388.121831 + Penalty 210.000000 = -2583178.121831
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (30.740000 sec): 3 clusters
+  Score: Raw -2490569.844008 + Penalty 420.000000 = -2490149.844008
+  nChanged 67560
+		SP:Iteration 1F (30.825000 sec): 3 clusters
+  Score: Raw -2533628.768490 + Penalty 420.000000 = -2533208.768490
+  nChanged 6504
+		SP:Iteration 2Q (30.918000 sec): 3 clusters
+  Score: Raw -2536996.843403 + Penalty 420.000000 = -2536576.843403
+  nChanged 8000
+		SP:Iteration 3F (31.116000 sec): 3 clusters
+  Score: Raw -2542558.484008 + Penalty 420.000000 = -2542138.484008
+  nChanged 9455
+		SP:Iteration 4F (31.318000 sec): 3 clusters
+  Score: Raw -2550087.635345 + Penalty 420.000000 = -2549667.635345
+  nChanged 9464
+		SP:Iteration 5F (31.412000 sec): 3 clusters
+  Score: Raw -2557027.857313 + Penalty 420.000000 = -2556607.857313
+  nChanged 7334
+		SP:Iteration 6F (31.500000 sec): 3 clusters
+  Score: Raw -2560406.797504 + Penalty 420.000000 = -2559986.797504
+  nChanged 4319
+		SP:Iteration 7Q (31.597000 sec): 3 clusters
+  Score: Raw -2561584.403417 + Penalty 420.000000 = -2561164.403417
+  nChanged 2562
+		SP:Iteration 8Q (31.688000 sec): 3 clusters
+  Score: Raw -2562252.663015 + Penalty 420.000000 = -2561832.663015
+  nChanged 2240
+		SP:Iteration 9Q (31.781000 sec): 3 clusters
+  Score: Raw -2562964.181741 + Penalty 420.000000 = -2562544.181741
+  nChanged 2419
+		SP:Iteration 10Q (31.876000 sec): 3 clusters
+  Score: Raw -2563896.644481 + Penalty 420.000000 = -2563476.644481
+  nChanged 2752
+		SP:Iteration 11Q (31.970000 sec): 3 clusters
+  Score: Raw -2565140.971638 + Penalty 420.000000 = -2564720.971638
+  nChanged 3217
+		SP:Iteration 12Q (32.050000 sec): 3 clusters
+  Score: Raw -2566880.118708 + Penalty 420.000000 = -2566460.118708
+  nChanged 3610
+		SP:Iteration 13Q (32.135000 sec): 3 clusters
+  Score: Raw -2569241.577024 + Penalty 420.000000 = -2568821.577024
+  nChanged 4008
+		SP:Iteration 14Q (32.237000 sec): 3 clusters
+  Score: Raw -2572276.658567 + Penalty 420.000000 = -2571856.658567
+  nChanged 4270
+		SP:Iteration 15Q (32.354000 sec): 3 clusters
+  Score: Raw -2575807.930283 + Penalty 420.000000 = -2575387.930283
+  nChanged 4219
+		SP:Iteration 16Q (32.444000 sec): 3 clusters
+  Score: Raw -2579050.072389 + Penalty 420.000000 = -2578630.072389
+  nChanged 3676
+		SP:Iteration 17Q (32.534000 sec): 3 clusters
+  Score: Raw -2581410.017208 + Penalty 420.000000 = -2580990.017208
+  nChanged 2880
+		SP:Iteration 18Q (32.627000 sec): 3 clusters
+  Score: Raw -2582887.920479 + Penalty 420.000000 = -2582467.920479
+  nChanged 2166
+		SP:Iteration 19Q (32.739000 sec): 3 clusters
+  Score: Raw -2583688.249235 + Penalty 420.000000 = -2583268.249235
+  nChanged 1547
+		SP:Iteration 20F (32.818000 sec): 3 clusters
+  Score: Raw -2584258.913425 + Penalty 420.000000 = -2583838.913425
+  nChanged 1162
+		SP:Iteration 21Q (32.906000 sec): 3 clusters
+  Score: Raw -2584543.611857 + Penalty 420.000000 = -2584123.611857
+  nChanged 950
+		SP:Iteration 22Q (32.992000 sec): 3 clusters
+  Score: Raw -2584711.753287 + Penalty 420.000000 = -2584291.753287
+  nChanged 693
+		SP:Iteration 23Q (33.071000 sec): 3 clusters
+  Score: Raw -2584811.538409 + Penalty 420.000000 = -2584391.538409
+  nChanged 544
+		SP:Iteration 24Q (33.163000 sec): 3 clusters
+  Score: Raw -2584884.703681 + Penalty 420.000000 = -2584464.703681
+  nChanged 449
+		SP:Iteration 25Q (33.277000 sec): 3 clusters
+  Score: Raw -2584946.548887 + Penalty 420.000000 = -2584526.548887
+  nChanged 416
+		SP:Iteration 26Q (33.371000 sec): 3 clusters
+  Score: Raw -2584990.691690 + Penalty 420.000000 = -2584570.691690
+  nChanged 348
+		SP:Iteration 27Q (33.510000 sec): 3 clusters
+  Score: Raw -2585019.542597 + Penalty 420.000000 = -2584599.542597
+  nChanged 289
+		SP:Iteration 28Q (33.609000 sec): 3 clusters
+  Score: Raw -2585038.230293 + Penalty 420.000000 = -2584618.230293
+  nChanged 252
+		SP:Iteration 29Q (33.707000 sec): 3 clusters
+  Score: Raw -2585052.125768 + Penalty 420.000000 = -2584632.125768
+  nChanged 241
+		SP:Iteration 30Q (33.797000 sec): 3 clusters
+  Score: Raw -2585063.573873 + Penalty 420.000000 = -2584643.573873
+  nChanged 209
+		SP:Iteration 31Q (33.890000 sec): 3 clusters
+  Score: Raw -2585072.204114 + Penalty 420.000000 = -2584652.204114
+  nChanged 203
+		SP:Iteration 32Q (33.985000 sec): 3 clusters
+  Score: Raw -2585080.192795 + Penalty 420.000000 = -2584660.192795
+  nChanged 195
+		SP:Iteration 33Q (34.092000 sec): 3 clusters
+  Score: Raw -2585086.513162 + Penalty 420.000000 = -2584666.513162
+  nChanged 163
+		SP:Iteration 34Q (34.184000 sec): 3 clusters
+  Score: Raw -2585091.508482 + Penalty 420.000000 = -2584671.508482
+  nChanged 156
+		SP:Iteration 35Q (34.279000 sec): 3 clusters
+  Score: Raw -2585096.002084 + Penalty 420.000000 = -2584676.002084
+  nChanged 134
+		SP:Iteration 36Q (34.379000 sec): 3 clusters
+  Score: Raw -2585099.730169 + Penalty 420.000000 = -2584679.730169
+  nChanged 138
+		SP:Iteration 37Q (34.489000 sec): 3 clusters
+  Score: Raw -2585103.615318 + Penalty 420.000000 = -2584683.615318
+  nChanged 144
+		SP:Iteration 38Q (34.585000 sec): 3 clusters
+  Score: Raw -2585107.431153 + Penalty 420.000000 = -2584687.431153
+  nChanged 115
+		SP:Iteration 39Q (34.676000 sec): 3 clusters
+  Score: Raw -2585110.101131 + Penalty 420.000000 = -2584690.101131
+  nChanged 127
+		SP:Iteration 40F (34.775000 sec): 3 clusters
+  Score: Raw -2585113.272727 + Penalty 420.000000 = -2584693.272727
+  nChanged 133
+		SP:Iteration 41Q (34.875000 sec): 3 clusters
+  Score: Raw -2585116.727348 + Penalty 420.000000 = -2584696.727348
+  nChanged 144
+		SP:Iteration 42Q (34.985000 sec): 3 clusters
+  Score: Raw -2585120.722730 + Penalty 420.000000 = -2584700.722730
+  nChanged 144
+		SP:Iteration 43Q (35.094000 sec): 3 clusters
+  Score: Raw -2585125.003487 + Penalty 420.000000 = -2584705.003487
+  nChanged 177
+		SP:Iteration 44Q (35.198000 sec): 3 clusters
+  Score: Raw -2585131.306468 + Penalty 420.000000 = -2584711.306468
+  nChanged 204
+		SP:Iteration 45Q (35.348000 sec): 3 clusters
+  Score: Raw -2585139.634364 + Penalty 420.000000 = -2584719.634364
+  nChanged 236
+		SP:Iteration 46Q (35.431000 sec): 3 clusters
+  Score: Raw -2585149.498448 + Penalty 420.000000 = -2584729.498448
+  nChanged 225
+		SP:Iteration 47Q (35.519000 sec): 3 clusters
+  Score: Raw -2585159.781912 + Penalty 420.000000 = -2584739.781912
+  nChanged 256
+		SP:Iteration 48Q (35.617000 sec): 3 clusters
+  Score: Raw -2585172.937486 + Penalty 420.000000 = -2584752.937486
+  nChanged 290
+		SP:Iteration 49Q (35.713000 sec): 3 clusters
+  Score: Raw -2585188.860031 + Penalty 420.000000 = -2584768.860031
+  nChanged 298
+		SP:Iteration 50Q (35.805000 sec): 3 clusters
+  Score: Raw -2585206.221103 + Penalty 420.000000 = -2584786.221103
+  nChanged 303
+		SP:Iteration 51Q (35.894000 sec): 3 clusters
+  Score: Raw -2585224.702169 + Penalty 420.000000 = -2584804.702169
+  nChanged 319
+		SP:Iteration 52Q (35.987000 sec): 3 clusters
+  Score: Raw -2585244.877229 + Penalty 420.000000 = -2584824.877229
+  nChanged 324
+		SP:Iteration 53Q (36.079000 sec): 3 clusters
+  Score: Raw -2585266.370037 + Penalty 420.000000 = -2584846.370037
+  nChanged 343
+		SP:Iteration 54Q (36.173000 sec): 3 clusters
+  Score: Raw -2585288.958861 + Penalty 420.000000 = -2584868.958861
+  nChanged 364
+		SP:Iteration 55Q (36.280000 sec): 3 clusters
+  Score: Raw -2585315.530064 + Penalty 420.000000 = -2584895.530064
+  nChanged 404
+		SP:Iteration 56Q (36.372000 sec): 3 clusters
+  Score: Raw -2585346.704815 + Penalty 420.000000 = -2584926.704815
+  nChanged 423
+		SP:Iteration 57Q (36.469000 sec): 3 clusters
+  Score: Raw -2585381.579893 + Penalty 420.000000 = -2584961.579893
+  nChanged 441
+		SP:Iteration 58Q (36.594000 sec): 3 clusters
+  Score: Raw -2585419.792497 + Penalty 420.000000 = -2584999.792497
+  nChanged 458
+		SP:Iteration 59Q (36.683000 sec): 3 clusters
+  Score: Raw -2585458.517483 + Penalty 420.000000 = -2585038.517483
+  nChanged 445
+		SP:Iteration 60F (36.800000 sec): 3 clusters
+  Score: Raw -2585495.376538 + Penalty 420.000000 = -2585075.376538
+  nChanged 424
+		SP:Iteration 61Q (36.890000 sec): 3 clusters
+  Score: Raw -2585527.932259 + Penalty 420.000000 = -2585107.932259
+  nChanged 384
+		SP:Iteration 62Q (36.986000 sec): 3 clusters
+  Score: Raw -2585554.072164 + Penalty 420.000000 = -2585134.072164
+  nChanged 344
+		SP:Iteration 63Q (37.098000 sec): 3 clusters
+  Score: Raw -2585575.529840 + Penalty 420.000000 = -2585155.529840
+  nChanged 311
+		SP:Iteration 64Q (37.233000 sec): 3 clusters
+  Score: Raw -2585593.456299 + Penalty 420.000000 = -2585173.456299
+  nChanged 298
+		SP:Iteration 65Q (37.381000 sec): 3 clusters
+  Score: Raw -2585610.089763 + Penalty 420.000000 = -2585190.089763
+  nChanged 278
+		SP:Iteration 66Q (37.523000 sec): 3 clusters
+  Score: Raw -2585624.124274 + Penalty 420.000000 = -2585204.124274
+  nChanged 257
+		SP:Iteration 67Q (37.702000 sec): 3 clusters
+  Score: Raw -2585637.285298 + Penalty 420.000000 = -2585217.285298
+  nChanged 250
+		SP:Iteration 68Q (37.893000 sec): 3 clusters
+  Score: Raw -2585649.786374 + Penalty 420.000000 = -2585229.786374
+  nChanged 247
+		SP:Iteration 69Q (38.070000 sec): 3 clusters
+  Score: Raw -2585660.432498 + Penalty 420.000000 = -2585240.432498
+  nChanged 194
+		SP:Iteration 70Q (38.225000 sec): 3 clusters
+  Score: Raw -2585667.324367 + Penalty 420.000000 = -2585247.324367
+  nChanged 153
+		SP:Iteration 71Q (38.378000 sec): 3 clusters
+  Score: Raw -2585671.963778 + Penalty 420.000000 = -2585251.963778
+  nChanged 121
+		SP:Iteration 72Q (38.549000 sec): 3 clusters
+  Score: Raw -2585674.629930 + Penalty 420.000000 = -2585254.629930
+  nChanged 84
+		SP:Iteration 73Q (38.698000 sec): 3 clusters
+  Score: Raw -2585676.087164 + Penalty 420.000000 = -2585256.087164
+  nChanged 66
+		SP:Iteration 74Q (38.829000 sec): 3 clusters
+  Score: Raw -2585677.013585 + Penalty 420.000000 = -2585257.013585
+  nChanged 68
+		SP:Iteration 75Q (38.935000 sec): 3 clusters
+  Score: Raw -2585677.997980 + Penalty 420.000000 = -2585257.997980
+  nChanged 49
+		SP:Iteration 76Q (39.105000 sec): 3 clusters
+  Score: Raw -2585678.562717 + Penalty 420.000000 = -2585258.562717
+  nChanged 39
+		SP:Iteration 77Q (39.290000 sec): 3 clusters
+  Score: Raw -2585679.012013 + Penalty 420.000000 = -2585259.012013
+  nChanged 39
+		SP:Iteration 78Q (39.453000 sec): 3 clusters
+  Score: Raw -2585679.415446 + Penalty 420.000000 = -2585259.415446
+  nChanged 31
+		SP:Iteration 79Q (39.634000 sec): 3 clusters
+  Score: Raw -2585679.642810 + Penalty 420.000000 = -2585259.642810
+  nChanged 18
+		SP:Iteration 80F (39.798000 sec): 3 clusters
+  Score: Raw -2585679.722851 + Penalty 420.000000 = -2585259.722851
+  nChanged 11
+		SP:Iteration 81Q (39.957000 sec): 3 clusters
+  Score: Raw -2585679.768222 + Penalty 420.000000 = -2585259.768222
+  nChanged 8
+		SP:Iteration 82Q (40.127000 sec): 3 clusters
+  Score: Raw -2585679.828239 + Penalty 420.000000 = -2585259.828239
+  nChanged 10
+		SP:Iteration 83Q (40.274000 sec): 3 clusters
+  Score: Raw -2585679.865879 + Penalty 420.000000 = -2585259.865879
+  nChanged 6
+		SP:Iteration 84Q (40.431000 sec): 3 clusters
+  Score: Raw -2585679.894618 + Penalty 420.000000 = -2585259.894618
+  nChanged 3
+		SP:Iteration 85Q (40.549000 sec): 3 clusters
+  Score: Raw -2585679.917068 + Penalty 420.000000 = -2585259.917068
+  nChanged 5
+		SP:Iteration 86Q (40.684000 sec): 3 clusters
+  Score: Raw -2585679.954127 + Penalty 420.000000 = -2585259.954127
+  nChanged 5
+		SP:Iteration 87Q (40.837000 sec): 3 clusters
+  Score: Raw -2585679.965223 + Penalty 420.000000 = -2585259.965223
+  nChanged 2
+		SP:Iteration 88Q (41.016000 sec): 3 clusters
+  Score: Raw -2585679.970554 + Penalty 420.000000 = -2585259.970554
+  nChanged 2
+		SP:Iteration 89Q (41.209000 sec): 3 clusters
+  Score: Raw -2585679.976846 + Penalty 420.000000 = -2585259.976846
+  nChanged 0
+		SP:Iteration 90F (41.371000 sec): 3 clusters
+  Score: Raw -2585679.976846 + Penalty 420.000000 = -2585259.976846
+  nChanged 0
+  Score: Raw -2718932.339045 + Penalty 1260.000000 = -2717672.339045
+
+Splitting cluster 1 changes total score from -2715589.658105 to -2717672.339045
+
+ So it's getting split into cluster 5.
+
+ Trying to split cluster 2 (888 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (41.641000 sec): 2 clusters
+  Score: Raw -16943.794381 + Penalty 210.000000 = -16733.794381
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (41.733000 sec): 3 clusters
+  Score: Raw -16541.107098 + Penalty 420.000000 = -16121.107098
+  nChanged 320
+		SP:Iteration 1F (41.747000 sec): 3 clusters
+  Score: Raw -16734.495892 + Penalty 420.000000 = -16314.495892
+  nChanged 63
+		SP:Iteration 2F (41.750000 sec): 3 clusters
+  Score: Raw -16779.428865 + Penalty 420.000000 = -16359.428865
+  nChanged 48
+		SP:Iteration 3F (41.773000 sec): 3 clusters
+  Score: Raw -16819.755834 + Penalty 420.000000 = -16399.755834
+  nChanged 41
+		SP:Iteration 4Q (41.844000 sec): 3 clusters
+  Score: Raw -16843.255503 + Penalty 420.000000 = -16423.255503
+  nChanged 23
+		SP:Iteration 5Q (41.865000 sec): 3 clusters
+  Score: Raw -16855.953330 + Penalty 420.000000 = -16435.953330
+  nChanged 21
+		SP:Iteration 6Q (41.867000 sec): 3 clusters
+  Score: Raw -16868.251599 + Penalty 420.000000 = -16448.251599
+  nChanged 19
+		SP:Iteration 7Q (41.870000 sec): 3 clusters
+  Score: Raw -16878.657954 + Penalty 420.000000 = -16458.657954
+  nChanged 18
+		SP:Iteration 8Q (41.880000 sec): 3 clusters
+  Score: Raw -16886.819340 + Penalty 420.000000 = -16466.819340
+  nChanged 10
+		SP:Iteration 9Q (41.883000 sec): 3 clusters
+  Score: Raw -16889.817504 + Penalty 420.000000 = -16469.817504
+  nChanged 7
+		SP:Iteration 10Q (41.886000 sec): 3 clusters
+  Score: Raw -16891.757141 + Penalty 420.000000 = -16471.757141
+  nChanged 8
+		SP:Iteration 11Q (41.889000 sec): 3 clusters
+  Score: Raw -16894.535281 + Penalty 420.000000 = -16474.535281
+  nChanged 5
+		SP:Iteration 12Q (41.892000 sec): 3 clusters
+  Score: Raw -16896.380666 + Penalty 420.000000 = -16476.380666
+  nChanged 4
+		SP:Iteration 13Q (41.896000 sec): 3 clusters
+  Score: Raw -16897.740012 + Penalty 420.000000 = -16477.740012
+  nChanged 5
+		SP:Iteration 14Q (41.899000 sec): 3 clusters
+  Score: Raw -16899.392105 + Penalty 420.000000 = -16479.392105
+  nChanged 3
+		SP:Iteration 15Q (41.902000 sec): 3 clusters
+  Score: Raw -16900.941787 + Penalty 420.000000 = -16480.941787
+  nChanged 4
+		SP:Iteration 16Q (41.905000 sec): 3 clusters
+  Score: Raw -16902.637540 + Penalty 420.000000 = -16482.637540
+  nChanged 5
+		SP:Iteration 17Q (41.929000 sec): 3 clusters
+  Score: Raw -16906.535560 + Penalty 420.000000 = -16486.535560
+  nChanged 10
+		SP:Iteration 18Q (41.972000 sec): 3 clusters
+  Score: Raw -16910.482372 + Penalty 420.000000 = -16490.482372
+  nChanged 7
+		SP:Iteration 19Q (42.021000 sec): 3 clusters
+  Score: Raw -16912.904557 + Penalty 420.000000 = -16492.904557
+  nChanged 4
+		SP:Iteration 20F (42.024000 sec): 3 clusters
+  Score: Raw -16914.657518 + Penalty 420.000000 = -16494.657518
+  nChanged 5
+		SP:Iteration 21Q (42.030000 sec): 3 clusters
+  Score: Raw -16916.311725 + Penalty 420.000000 = -16496.311725
+  nChanged 3
+		SP:Iteration 22Q (42.033000 sec): 3 clusters
+  Score: Raw -16917.681212 + Penalty 420.000000 = -16497.681212
+  nChanged 2
+		SP:Iteration 23Q (42.036000 sec): 3 clusters
+  Score: Raw -16918.191834 + Penalty 420.000000 = -16498.191834
+  nChanged 2
+		SP:Iteration 24Q (42.040000 sec): 3 clusters
+  Score: Raw -16918.747036 + Penalty 420.000000 = -16498.747036
+  nChanged 2
+		SP:Iteration 25Q (42.043000 sec): 3 clusters
+  Score: Raw -16919.004249 + Penalty 420.000000 = -16499.004249
+  nChanged 1
+		SP:Iteration 26Q (42.045000 sec): 3 clusters
+  Score: Raw -16919.048430 + Penalty 420.000000 = -16499.048430
+  nChanged 0
+		SP:Iteration 27F (42.049000 sec): 3 clusters
+  Score: Raw -16919.048430 + Penalty 420.000000 = -16499.048430
+  nChanged 0
+
+ Trying to split cluster 3 (1157 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (42.053000 sec): 2 clusters
+  Score: Raw -21376.039337 + Penalty 210.000000 = -21166.039337
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (42.057000 sec): 3 clusters
+  Score: Raw -20771.243770 + Penalty 420.000000 = -20351.243770
+  nChanged 462
+		SP:Iteration 1F (42.062000 sec): 3 clusters
+  Score: Raw -21052.763993 + Penalty 420.000000 = -20632.763993
+  nChanged 81
+		SP:Iteration 2F (42.066000 sec): 3 clusters
+  Score: Raw -21102.806088 + Penalty 420.000000 = -20682.806088
+  nChanged 56
+		SP:Iteration 3Q (42.166000 sec): 3 clusters
+  Score: Raw -21140.297187 + Penalty 420.000000 = -20720.297187
+  nChanged 50
+		SP:Iteration 4Q (42.170000 sec): 3 clusters
+  Score: Raw -21178.991220 + Penalty 420.000000 = -20758.991220
+  nChanged 40
+		SP:Iteration 5Q (42.172000 sec): 3 clusters
+  Score: Raw -21207.023319 + Penalty 420.000000 = -20787.023319
+  nChanged 34
+		SP:Iteration 6Q (42.174000 sec): 3 clusters
+  Score: Raw -21239.804563 + Penalty 420.000000 = -20819.804563
+  nChanged 29
+		SP:Iteration 7Q (42.179000 sec): 3 clusters
+  Score: Raw -21258.899141 + Penalty 420.000000 = -20838.899141
+  nChanged 22
+		SP:Iteration 8Q (42.181000 sec): 3 clusters
+  Score: Raw -21277.234972 + Penalty 420.000000 = -20857.234972
+  nChanged 36
+		SP:Iteration 9Q (42.184000 sec): 3 clusters
+  Score: Raw -21307.339963 + Penalty 420.000000 = -20887.339963
+  nChanged 25
+		SP:Iteration 10Q (42.187000 sec): 3 clusters
+  Score: Raw -21327.239411 + Penalty 420.000000 = -20907.239411
+  nChanged 20
+		SP:Iteration 11Q (42.192000 sec): 3 clusters
+  Score: Raw -21347.228535 + Penalty 420.000000 = -20927.228535
+  nChanged 22
+		SP:Iteration 12Q (42.194000 sec): 3 clusters
+  Score: Raw -21374.774407 + Penalty 420.000000 = -20954.774407
+  nChanged 15
+		SP:Iteration 13Q (42.198000 sec): 3 clusters
+  Score: Raw -21399.471168 + Penalty 420.000000 = -20979.471168
+  nChanged 12
+		SP:Iteration 14Q (42.201000 sec): 3 clusters
+  Score: Raw -21422.320352 + Penalty 420.000000 = -21002.320352
+  nChanged 9
+		SP:Iteration 15Q (42.204000 sec): 3 clusters
+  Score: Raw -21429.306162 + Penalty 420.000000 = -21009.306162
+  nChanged 8
+		SP:Iteration 16Q (42.209000 sec): 3 clusters
+  Score: Raw -21434.919983 + Penalty 420.000000 = -21014.919983
+  nChanged 7
+		SP:Iteration 17Q (42.211000 sec): 3 clusters
+  Score: Raw -21441.331747 + Penalty 420.000000 = -21021.331747
+  nChanged 8
+		SP:Iteration 18Q (42.227000 sec): 3 clusters
+  Score: Raw -21449.097256 + Penalty 420.000000 = -21029.097256
+  nChanged 7
+		SP:Iteration 19Q (42.237000 sec): 3 clusters
+  Score: Raw -21458.078071 + Penalty 420.000000 = -21038.078071
+  nChanged 12
+		SP:Iteration 20F (42.252000 sec): 3 clusters
+  Score: Raw -21470.642575 + Penalty 420.000000 = -21050.642575
+  nChanged 10
+		SP:Iteration 21Q (42.328000 sec): 3 clusters
+  Score: Raw -21485.916315 + Penalty 420.000000 = -21065.916315
+  nChanged 7
+		SP:Iteration 22Q (42.330000 sec): 3 clusters
+  Score: Raw -21493.032219 + Penalty 420.000000 = -21073.032219
+  nChanged 4
+		SP:Iteration 23Q (42.334000 sec): 3 clusters
+  Score: Raw -21496.548660 + Penalty 420.000000 = -21076.548660
+  nChanged 3
+		SP:Iteration 24Q (42.343000 sec): 3 clusters
+  Score: Raw -21500.425182 + Penalty 420.000000 = -21080.425182
+  nChanged 4
+		SP:Iteration 25Q (42.347000 sec): 3 clusters
+  Score: Raw -21505.063986 + Penalty 420.000000 = -21085.063986
+  nChanged 3
+		SP:Iteration 26Q (42.350000 sec): 3 clusters
+  Score: Raw -21507.375112 + Penalty 420.000000 = -21087.375112
+  nChanged 1
+		SP:Iteration 27Q (42.354000 sec): 3 clusters
+  Score: Raw -21507.687798 + Penalty 420.000000 = -21087.687798
+  nChanged 0
+		SP:Iteration 28F (42.358000 sec): 3 clusters
+  Score: Raw -21507.687798 + Penalty 420.000000 = -21087.687798
+  nChanged 0
+
+ Trying to split cluster 4 (8349 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (42.371000 sec): 2 clusters
+  Score: Raw -139212.118181 + Penalty 210.000000 = -139002.118181
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (42.438000 sec): 3 clusters
+  Score: Raw -134130.261704 + Penalty 420.000000 = -133710.261704
+  nChanged 3857
+		SP:Iteration 1F (42.489000 sec): 3 clusters
+  Score: Raw -137017.805991 + Penalty 420.000000 = -136597.805991
+  nChanged 824
+		SP:Iteration 2F (42.495000 sec): 3 clusters
+  Score: Raw -137881.499608 + Penalty 420.000000 = -137461.499608
+  nChanged 824
+		SP:Iteration 3F (42.503000 sec): 3 clusters
+  Score: Raw -138555.053644 + Penalty 420.000000 = -138135.053644
+  nChanged 567
+		SP:Iteration 4F (42.510000 sec): 3 clusters
+  Score: Raw -138898.142403 + Penalty 420.000000 = -138478.142403
+  nChanged 390
+		SP:Iteration 5Q (42.519000 sec): 3 clusters
+  Score: Raw -139135.623185 + Penalty 420.000000 = -138715.623185
+  nChanged 254
+		SP:Iteration 6Q (42.527000 sec): 3 clusters
+  Score: Raw -139269.126082 + Penalty 420.000000 = -138849.126082
+  nChanged 166
+		SP:Iteration 7Q (42.552000 sec): 3 clusters
+  Score: Raw -139358.523331 + Penalty 420.000000 = -138938.523331
+  nChanged 160
+		SP:Iteration 8Q (42.643000 sec): 3 clusters
+  Score: Raw -139454.498725 + Penalty 420.000000 = -139034.498725
+  nChanged 142
+		SP:Iteration 9Q (42.652000 sec): 3 clusters
+  Score: Raw -139549.856997 + Penalty 420.000000 = -139129.856997
+  nChanged 124
+		SP:Iteration 10Q (42.659000 sec): 3 clusters
+  Score: Raw -139628.894016 + Penalty 420.000000 = -139208.894016
+  nChanged 107
+		SP:Iteration 11Q (42.667000 sec): 3 clusters
+  Score: Raw -139668.637482 + Penalty 420.000000 = -139248.637482
+  nChanged 85
+		SP:Iteration 12Q (42.674000 sec): 3 clusters
+  Score: Raw -139693.251545 + Penalty 420.000000 = -139273.251545
+  nChanged 78
+		SP:Iteration 13Q (42.682000 sec): 3 clusters
+  Score: Raw -139716.994114 + Penalty 420.000000 = -139296.994114
+  nChanged 65
+		SP:Iteration 14Q (42.700000 sec): 3 clusters
+  Score: Raw -139731.419298 + Penalty 420.000000 = -139311.419298
+  nChanged 57
+		SP:Iteration 15Q (42.754000 sec): 3 clusters
+  Score: Raw -139745.976287 + Penalty 420.000000 = -139325.976287
+  nChanged 50
+		SP:Iteration 16Q (42.806000 sec): 3 clusters
+  Score: Raw -139757.954144 + Penalty 420.000000 = -139337.954144
+  nChanged 44
+		SP:Iteration 17Q (42.813000 sec): 3 clusters
+  Score: Raw -139767.457335 + Penalty 420.000000 = -139347.457335
+  nChanged 32
+		SP:Iteration 18Q (42.820000 sec): 3 clusters
+  Score: Raw -139772.536060 + Penalty 420.000000 = -139352.536060
+  nChanged 28
+		SP:Iteration 19Q (42.827000 sec): 3 clusters
+  Score: Raw -139776.806011 + Penalty 420.000000 = -139356.806011
+  nChanged 30
+		SP:Iteration 20F (42.834000 sec): 3 clusters
+  Score: Raw -139781.898324 + Penalty 420.000000 = -139361.898324
+  nChanged 32
+		SP:Iteration 21Q (42.844000 sec): 3 clusters
+  Score: Raw -139786.895914 + Penalty 420.000000 = -139366.895914
+  nChanged 33
+		SP:Iteration 22Q (42.852000 sec): 3 clusters
+  Score: Raw -139792.959308 + Penalty 420.000000 = -139372.959308
+  nChanged 37
+		SP:Iteration 23Q (42.860000 sec): 3 clusters
+  Score: Raw -139803.414116 + Penalty 420.000000 = -139383.414116
+  nChanged 48
+		SP:Iteration 24Q (42.869000 sec): 3 clusters
+  Score: Raw -139815.396200 + Penalty 420.000000 = -139395.396200
+  nChanged 44
+		SP:Iteration 25Q (42.957000 sec): 3 clusters
+  Score: Raw -139823.861562 + Penalty 420.000000 = -139403.861562
+  nChanged 30
+		SP:Iteration 26Q (42.994000 sec): 3 clusters
+  Score: Raw -139829.685933 + Penalty 420.000000 = -139409.685933
+  nChanged 32
+		SP:Iteration 27Q (43.112000 sec): 3 clusters
+  Score: Raw -139837.955483 + Penalty 420.000000 = -139417.955483
+  nChanged 31
+		SP:Iteration 28Q (43.120000 sec): 3 clusters
+  Score: Raw -139844.663107 + Penalty 420.000000 = -139424.663107
+  nChanged 29
+		SP:Iteration 29Q (43.164000 sec): 3 clusters
+  Score: Raw -139852.194162 + Penalty 420.000000 = -139432.194162
+  nChanged 37
+		SP:Iteration 30Q (43.334000 sec): 3 clusters
+  Score: Raw -139864.142774 + Penalty 420.000000 = -139444.142774
+  nChanged 41
+		SP:Iteration 31Q (43.396000 sec): 3 clusters
+  Score: Raw -139882.809191 + Penalty 420.000000 = -139462.809191
+  nChanged 41
+		SP:Iteration 32Q (43.463000 sec): 3 clusters
+  Score: Raw -139904.920316 + Penalty 420.000000 = -139484.920316
+  nChanged 61
+		SP:Iteration 33Q (43.470000 sec): 3 clusters
+  Score: Raw -139938.211017 + Penalty 420.000000 = -139518.211017
+  nChanged 76
+		SP:Iteration 34Q (43.477000 sec): 3 clusters
+  Score: Raw -139986.647101 + Penalty 420.000000 = -139566.647101
+  nChanged 89
+		SP:Iteration 35Q (43.484000 sec): 3 clusters
+  Score: Raw -140042.736302 + Penalty 420.000000 = -139622.736302
+  nChanged 83
+		SP:Iteration 36Q (43.500000 sec): 3 clusters
+  Score: Raw -140097.030832 + Penalty 420.000000 = -139677.030832
+  nChanged 57
+		SP:Iteration 37Q (43.524000 sec): 3 clusters
+  Score: Raw -140131.546223 + Penalty 420.000000 = -139711.546223
+  nChanged 50
+		SP:Iteration 38Q (43.673000 sec): 3 clusters
+  Score: Raw -140157.914583 + Penalty 420.000000 = -139737.914583
+  nChanged 31
+		SP:Iteration 39Q (43.679000 sec): 3 clusters
+  Score: Raw -140170.867323 + Penalty 420.000000 = -139750.867323
+  nChanged 23
+		SP:Iteration 40F (43.685000 sec): 3 clusters
+  Score: Raw -140183.167050 + Penalty 420.000000 = -139763.167050
+  nChanged 29
+		SP:Iteration 41Q (43.694000 sec): 3 clusters
+  Score: Raw -140200.498079 + Penalty 420.000000 = -139780.498079
+  nChanged 38
+		SP:Iteration 42Q (43.701000 sec): 3 clusters
+  Score: Raw -140221.622988 + Penalty 420.000000 = -139801.622988
+  nChanged 25
+		SP:Iteration 43Q (43.708000 sec): 3 clusters
+  Score: Raw -140231.826559 + Penalty 420.000000 = -139811.826559
+  nChanged 22
+		SP:Iteration 44Q (43.715000 sec): 3 clusters
+  Score: Raw -140241.511605 + Penalty 420.000000 = -139821.511605
+  nChanged 16
+		SP:Iteration 45Q (43.723000 sec): 3 clusters
+  Score: Raw -140248.057220 + Penalty 420.000000 = -139828.057220
+  nChanged 15
+		SP:Iteration 46Q (43.731000 sec): 3 clusters
+  Score: Raw -140257.914346 + Penalty 420.000000 = -139837.914346
+  nChanged 13
+		SP:Iteration 47Q (43.864000 sec): 3 clusters
+  Score: Raw -140263.530532 + Penalty 420.000000 = -139843.530532
+  nChanged 11
+		SP:Iteration 48Q (43.932000 sec): 3 clusters
+  Score: Raw -140266.081305 + Penalty 420.000000 = -139846.081305
+  nChanged 6
+		SP:Iteration 49Q (43.940000 sec): 3 clusters
+  Score: Raw -140267.580693 + Penalty 420.000000 = -139847.580693
+  nChanged 6
+		SP:Iteration 50Q (43.948000 sec): 3 clusters
+  Score: Raw -140268.904551 + Penalty 420.000000 = -139848.904551
+  nChanged 5
+		SP:Iteration 51Q (43.956000 sec): 3 clusters
+  Score: Raw -140270.426388 + Penalty 420.000000 = -139850.426388
+  nChanged 2
+		SP:Iteration 52Q (43.966000 sec): 3 clusters
+  Score: Raw -140270.724990 + Penalty 420.000000 = -139850.724990
+  nChanged 3
+		SP:Iteration 53Q (43.974000 sec): 3 clusters
+  Score: Raw -140271.095320 + Penalty 420.000000 = -139851.095320
+  nChanged 0
+		SP:Iteration 54F (44.019000 sec): 3 clusters
+  Score: Raw -140271.095320 + Penalty 420.000000 = -139851.095320
+  nChanged 0
+  Score: Raw -2719991.315929 + Penalty 1470.000000 = -2718521.315929
+
+Splitting cluster 4 changes total score from -2715589.658105 to -2718521.315929
+
+ So it's getting split into cluster 6.
+Iteration 59Q (44.471000 sec): 7 clusters
+  Score: Raw -2720582.298295 + Penalty 1470.000000 = -2719112.298295
+  nChanged 1126
+Iteration 60F (44.706000 sec): 7 clusters
+  Score: Raw -2721174.123541 + Penalty 1470.000000 = -2719704.123541
+  nChanged 1037
+Iteration 61Q (44.898000 sec): 7 clusters
+  Score: Raw -2721403.066707 + Penalty 1470.000000 = -2719933.066707
+  nChanged 610
+Iteration 62Q (45.069000 sec): 7 clusters
+  Score: Raw -2721515.066488 + Penalty 1470.000000 = -2720045.066488
+  nChanged 466
+Iteration 63Q (45.288000 sec): 7 clusters
+  Score: Raw -2721588.661224 + Penalty 1470.000000 = -2720118.661224
+  nChanged 347
+Iteration 64Q (45.506000 sec): 7 clusters
+  Score: Raw -2721630.218045 + Penalty 1470.000000 = -2720160.218045
+  nChanged 258
+Iteration 65Q (45.705000 sec): 7 clusters
+  Score: Raw -2721653.521257 + Penalty 1470.000000 = -2720183.521257
+  nChanged 190
+Iteration 66Q (45.890000 sec): 7 clusters
+  Score: Raw -2721667.009219 + Penalty 1470.000000 = -2720197.009219
+  nChanged 144
+Iteration 67Q (46.104000 sec): 7 clusters
+  Score: Raw -2721676.545644 + Penalty 1470.000000 = -2720206.545644
+  nChanged 116
+Iteration 68Q (46.275000 sec): 7 clusters
+  Score: Raw -2721685.076248 + Penalty 1470.000000 = -2720215.076248
+  nChanged 110
+Iteration 69Q (46.526000 sec): 7 clusters
+  Score: Raw -2721691.829686 + Penalty 1470.000000 = -2720221.829686
+  nChanged 83
+Iteration 70Q (46.742000 sec): 7 clusters
+  Score: Raw -2721695.831286 + Penalty 1470.000000 = -2720225.831286
+  nChanged 77
+Iteration 71Q (46.932000 sec): 7 clusters
+  Score: Raw -2721699.628742 + Penalty 1470.000000 = -2720229.628742
+  nChanged 64
+Iteration 72Q (47.180000 sec): 7 clusters
+  Score: Raw -2721702.295489 + Penalty 1470.000000 = -2720232.295489
+  nChanged 57
+Iteration 73Q (47.422000 sec): 7 clusters
+  Score: Raw -2721704.618895 + Penalty 1470.000000 = -2720234.618895
+  nChanged 47
+Iteration 74Q (47.686000 sec): 7 clusters
+  Score: Raw -2721706.936912 + Penalty 1470.000000 = -2720236.936912
+  nChanged 44
+Iteration 75Q (47.852000 sec): 7 clusters
+  Score: Raw -2721709.672099 + Penalty 1470.000000 = -2720239.672099
+  nChanged 38
+Iteration 76Q (48.109000 sec): 7 clusters
+  Score: Raw -2721711.414714 + Penalty 1470.000000 = -2720241.414714
+  nChanged 33
+Iteration 77Q (48.276000 sec): 7 clusters
+  Score: Raw -2721712.775397 + Penalty 1470.000000 = -2720242.775397
+  nChanged 35
+Iteration 78Q (48.442000 sec): 7 clusters
+  Score: Raw -2721714.185097 + Penalty 1470.000000 = -2720244.185097
+  nChanged 30
+Iteration 79Q (48.683000 sec): 7 clusters
+  Score: Raw -2721715.202604 + Penalty 1470.000000 = -2720245.202604
+  nChanged 33
+Iteration 80F (48.963000 sec): 7 clusters
+  Score: Raw -2721716.829830 + Penalty 1470.000000 = -2720246.829830
+  nChanged 24
+Iteration 81Q (49.149000 sec): 7 clusters
+  Score: Raw -2721717.813035 + Penalty 1470.000000 = -2720247.813035
+  nChanged 23
+Iteration 82Q (49.440000 sec): 7 clusters
+  Score: Raw -2721718.884137 + Penalty 1470.000000 = -2720248.884137
+  nChanged 20
+Iteration 83Q (49.674000 sec): 7 clusters
+  Score: Raw -2721719.190989 + Penalty 1470.000000 = -2720249.190989
+  nChanged 17
+Iteration 84Q (49.852000 sec): 7 clusters
+  Score: Raw -2721719.415219 + Penalty 1470.000000 = -2720249.415219
+  nChanged 9
+Iteration 85Q (50.042000 sec): 7 clusters
+  Score: Raw -2721719.920927 + Penalty 1470.000000 = -2720249.920927
+  nChanged 12
+Iteration 86Q (50.237000 sec): 7 clusters
+  Score: Raw -2721720.283081 + Penalty 1470.000000 = -2720250.283081
+  nChanged 6
+Iteration 87Q (50.410000 sec): 7 clusters
+  Score: Raw -2721720.749098 + Penalty 1470.000000 = -2720250.749098
+  nChanged 10
+Iteration 88Q (50.590000 sec): 7 clusters
+  Score: Raw -2721721.345502 + Penalty 1470.000000 = -2720251.345502
+  nChanged 15
+Iteration 89Q (50.752000 sec): 7 clusters
+  Score: Raw -2721722.228040 + Penalty 1470.000000 = -2720252.228040
+  nChanged 22
+Iteration 90Q (50.953000 sec): 7 clusters
+  Score: Raw -2721722.736829 + Penalty 1470.000000 = -2720252.736829
+  nChanged 15
+Iteration 91Q (51.151000 sec): 7 clusters
+  Score: Raw -2721723.145092 + Penalty 1470.000000 = -2720253.145092
+  nChanged 13
+Iteration 92Q (51.339000 sec): 7 clusters
+  Score: Raw -2721723.385921 + Penalty 1470.000000 = -2720253.385921
+  nChanged 8
+Iteration 93Q (51.517000 sec): 7 clusters
+  Score: Raw -2721723.536798 + Penalty 1470.000000 = -2720253.536798
+  nChanged 6
+Iteration 94Q (51.701000 sec): 7 clusters
+  Score: Raw -2721723.622217 + Penalty 1470.000000 = -2720253.622217
+  nChanged 4
+Iteration 95Q (51.936000 sec): 7 clusters
+  Score: Raw -2721723.712896 + Penalty 1470.000000 = -2720253.712896
+  nChanged 2
+Iteration 96Q (52.122000 sec): 7 clusters
+  Score: Raw -2721723.769506 + Penalty 1470.000000 = -2720253.769506
+  nChanged 4
+Iteration 97Q (52.308000 sec): 7 clusters
+  Score: Raw -2721724.000939 + Penalty 1470.000000 = -2720254.000939
+  nChanged 4
+Iteration 98Q (52.493000 sec): 7 clusters
+  Score: Raw -2721724.098232 + Penalty 1470.000000 = -2720254.098232
+  nChanged 4
+Writing temp clu file 
+Because OldScore, -2720254.000939, is greater than current (better) Score,-2720254.098232 
+ Compute initial score before splitting:   Score: Raw -2721724.098232 + Penalty 1470.000000 = -2720254.098232
+
+ Trying to split cluster 1 (54609 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (54.539000 sec): 2 clusters
+  Score: Raw -1061525.876627 + Penalty 210.000000 = -1061315.876627
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (54.583000 sec): 3 clusters
+  Score: Raw -1025250.931287 + Penalty 420.000000 = -1024830.931287
+  nChanged 26517
+		SP:Iteration 1F (54.615000 sec): 3 clusters
+  Score: Raw -1041007.075034 + Penalty 420.000000 = -1040587.075034
+  nChanged 1910
+		SP:Iteration 2Q (54.655000 sec): 3 clusters
+  Score: Raw -1041635.357226 + Penalty 420.000000 = -1041215.357226
+  nChanged 2251
+		SP:Iteration 3Q (54.688000 sec): 3 clusters
+  Score: Raw -1042677.783002 + Penalty 420.000000 = -1042257.783002
+  nChanged 2958
+		SP:Iteration 4F (54.734000 sec): 3 clusters
+  Score: Raw -1044520.553774 + Penalty 420.000000 = -1044100.553774
+  nChanged 3718
+		SP:Iteration 5F (54.769000 sec): 3 clusters
+  Score: Raw -1047325.914498 + Penalty 420.000000 = -1046905.914498
+  nChanged 4208
+		SP:Iteration 6F (54.818000 sec): 3 clusters
+  Score: Raw -1050960.520758 + Penalty 420.000000 = -1050540.520758
+  nChanged 4117
+		SP:Iteration 7F (54.854000 sec): 3 clusters
+  Score: Raw -1054818.727903 + Penalty 420.000000 = -1054398.727903
+  nChanged 3146
+		SP:Iteration 8F (54.915000 sec): 3 clusters
+  Score: Raw -1057824.168689 + Penalty 420.000000 = -1057404.168689
+  nChanged 2039
+		SP:Iteration 9Q (55.023000 sec): 3 clusters
+  Score: Raw -1059751.294739 + Penalty 420.000000 = -1059331.294739
+  nChanged 1100
+		SP:Iteration 10Q (55.078000 sec): 3 clusters
+  Score: Raw -1060775.572883 + Penalty 420.000000 = -1060355.572883
+  nChanged 518
+		SP:Iteration 11Q (55.186000 sec): 3 clusters
+  Score: Raw -1061237.804695 + Penalty 420.000000 = -1060817.804695
+  nChanged 212
+		SP:Iteration 12Q (55.224000 sec): 3 clusters
+  Score: Raw -1061414.717162 + Penalty 420.000000 = -1060994.717162
+  nChanged 98
+		SP:Iteration 13Q (55.262000 sec): 3 clusters
+  Score: Raw -1061501.117644 + Penalty 420.000000 = -1061081.117644
+  nChanged 45
+		SP:Iteration 14Q (55.300000 sec): 3 clusters
+  Score: Raw -1061544.784299 + Penalty 420.000000 = -1061124.784299
+  nChanged 24
+		SP:Iteration 15Q (55.338000 sec): 3 clusters
+  Score: Raw -1061576.497776 + Penalty 420.000000 = -1061156.497776
+  nChanged 15
+		SP:Iteration 16Q (55.378000 sec): 3 clusters
+  Score: Raw -1061589.017070 + Penalty 420.000000 = -1061169.017070
+  nChanged 10
+		SP:Iteration 17Q (55.417000 sec): 3 clusters
+  Score: Raw -1061597.937686 + Penalty 420.000000 = -1061177.937686
+  nChanged 12
+		SP:Iteration 18Q (55.454000 sec): 3 clusters
+  Score: Raw -1061607.065649 + Penalty 420.000000 = -1061187.065649
+  nChanged 8
+		SP:Iteration 19Q (55.489000 sec): 3 clusters
+  Score: Raw -1061614.296840 + Penalty 420.000000 = -1061194.296840
+  nChanged 3
+		SP:Iteration 20F (55.550000 sec): 3 clusters
+  Score: Raw -1061616.856560 + Penalty 420.000000 = -1061196.856560
+  nChanged 1
+		SP:Iteration 21Q (55.730000 sec): 3 clusters
+  Score: Raw -1061617.606884 + Penalty 420.000000 = -1061197.606884
+  nChanged 2
+		SP:Iteration 22Q (55.788000 sec): 3 clusters
+  Score: Raw -1061618.239788 + Penalty 420.000000 = -1061198.239788
+  nChanged 2
+		SP:Iteration 23Q (55.827000 sec): 3 clusters
+  Score: Raw -1061619.904707 + Penalty 420.000000 = -1061199.904707
+  nChanged 0
+		SP:Iteration 24F (55.878000 sec): 3 clusters
+  Score: Raw -1061619.904707 + Penalty 420.000000 = -1061199.904707
+  nChanged 0
+
+ Trying to split cluster 2 (880 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (55.886000 sec): 2 clusters
+  Score: Raw -16719.155473 + Penalty 210.000000 = -16509.155473
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (55.890000 sec): 3 clusters
+  Score: Raw -16292.732346 + Penalty 420.000000 = -15872.732346
+  nChanged 319
+		SP:Iteration 1F (55.893000 sec): 3 clusters
+  Score: Raw -16472.655521 + Penalty 420.000000 = -16052.655521
+  nChanged 82
+		SP:Iteration 2F (55.896000 sec): 3 clusters
+  Score: Raw -16520.200206 + Penalty 420.000000 = -16100.200206
+  nChanged 51
+		SP:Iteration 3F (55.900000 sec): 3 clusters
+  Score: Raw -16551.986953 + Penalty 420.000000 = -16131.986953
+  nChanged 46
+		SP:Iteration 4F (55.903000 sec): 3 clusters
+  Score: Raw -16591.896586 + Penalty 420.000000 = -16171.896586
+  nChanged 40
+		SP:Iteration 5Q (55.940000 sec): 3 clusters
+  Score: Raw -16624.058552 + Penalty 420.000000 = -16204.058552
+  nChanged 32
+		SP:Iteration 6Q (56.046000 sec): 3 clusters
+  Score: Raw -16646.927617 + Penalty 420.000000 = -16226.927617
+  nChanged 30
+		SP:Iteration 7Q (56.050000 sec): 3 clusters
+  Score: Raw -16670.029698 + Penalty 420.000000 = -16250.029698
+  nChanged 35
+		SP:Iteration 8Q (56.053000 sec): 3 clusters
+  Score: Raw -16688.220257 + Penalty 420.000000 = -16268.220257
+  nChanged 19
+		SP:Iteration 9Q (56.059000 sec): 3 clusters
+  Score: Raw -16699.308679 + Penalty 420.000000 = -16279.308679
+  nChanged 17
+		SP:Iteration 10Q (56.062000 sec): 3 clusters
+  Score: Raw -16710.055202 + Penalty 420.000000 = -16290.055202
+  nChanged 17
+		SP:Iteration 11Q (56.066000 sec): 3 clusters
+  Score: Raw -16723.284226 + Penalty 420.000000 = -16303.284226
+  nChanged 15
+		SP:Iteration 12Q (56.070000 sec): 3 clusters
+  Score: Raw -16731.198081 + Penalty 420.000000 = -16311.198081
+  nChanged 11
+		SP:Iteration 13Q (56.086000 sec): 3 clusters
+  Score: Raw -16739.000805 + Penalty 420.000000 = -16319.000805
+  nChanged 14
+		SP:Iteration 14Q (56.100000 sec): 3 clusters
+  Score: Raw -16748.385509 + Penalty 420.000000 = -16328.385509
+  nChanged 10
+		SP:Iteration 15Q (56.103000 sec): 3 clusters
+  Score: Raw -16752.932716 + Penalty 420.000000 = -16332.932716
+  nChanged 10
+		SP:Iteration 16Q (56.106000 sec): 3 clusters
+  Score: Raw -16757.571036 + Penalty 420.000000 = -16337.571036
+  nChanged 6
+		SP:Iteration 17Q (56.111000 sec): 3 clusters
+  Score: Raw -16761.747528 + Penalty 420.000000 = -16341.747528
+  nChanged 12
+		SP:Iteration 18Q (56.114000 sec): 3 clusters
+  Score: Raw -16771.057402 + Penalty 420.000000 = -16351.057402
+  nChanged 11
+		SP:Iteration 19Q (56.118000 sec): 3 clusters
+  Score: Raw -16778.905169 + Penalty 420.000000 = -16358.905169
+  nChanged 16
+		SP:Iteration 20F (56.124000 sec): 3 clusters
+  Score: Raw -16793.686455 + Penalty 420.000000 = -16373.686455
+  nChanged 13
+		SP:Iteration 21Q (56.128000 sec): 3 clusters
+  Score: Raw -16805.251085 + Penalty 420.000000 = -16385.251085
+  nChanged 14
+		SP:Iteration 22Q (56.130000 sec): 3 clusters
+  Score: Raw -16822.521342 + Penalty 420.000000 = -16402.521342
+  nChanged 10
+		SP:Iteration 23Q (56.133000 sec): 3 clusters
+  Score: Raw -16827.951299 + Penalty 420.000000 = -16407.951299
+  nChanged 5
+		SP:Iteration 24Q (56.159000 sec): 3 clusters
+  Score: Raw -16829.741652 + Penalty 420.000000 = -16409.741652
+  nChanged 3
+		SP:Iteration 25Q (56.160000 sec): 3 clusters
+  Score: Raw -16831.301912 + Penalty 420.000000 = -16411.301912
+  nChanged 3
+		SP:Iteration 26Q (56.162000 sec): 3 clusters
+  Score: Raw -16832.464572 + Penalty 420.000000 = -16412.464572
+  nChanged 3
+		SP:Iteration 27Q (56.164000 sec): 3 clusters
+  Score: Raw -16833.319201 + Penalty 420.000000 = -16413.319201
+  nChanged 0
+		SP:Iteration 28F (56.167000 sec): 3 clusters
+  Score: Raw -16833.319201 + Penalty 420.000000 = -16413.319201
+  nChanged 0
+
+ Trying to split cluster 3 (1107 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (56.170000 sec): 2 clusters
+  Score: Raw -20628.482533 + Penalty 210.000000 = -20418.482533
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (56.174000 sec): 3 clusters
+  Score: Raw -20096.035778 + Penalty 420.000000 = -19676.035778
+  nChanged 441
+		SP:Iteration 1F (56.176000 sec): 3 clusters
+  Score: Raw -20355.294876 + Penalty 420.000000 = -19935.294876
+  nChanged 101
+		SP:Iteration 2F (56.178000 sec): 3 clusters
+  Score: Raw -20430.623485 + Penalty 420.000000 = -20010.623485
+  nChanged 66
+		SP:Iteration 3F (56.181000 sec): 3 clusters
+  Score: Raw -20477.456821 + Penalty 420.000000 = -20057.456821
+  nChanged 60
+		SP:Iteration 4F (56.186000 sec): 3 clusters
+  Score: Raw -20521.917398 + Penalty 420.000000 = -20101.917398
+  nChanged 40
+		SP:Iteration 5Q (56.189000 sec): 3 clusters
+  Score: Raw -20544.441129 + Penalty 420.000000 = -20124.441129
+  nChanged 26
+		SP:Iteration 6Q (56.325000 sec): 3 clusters
+  Score: Raw -20557.439863 + Penalty 420.000000 = -20137.439863
+  nChanged 18
+		SP:Iteration 7Q (56.343000 sec): 3 clusters
+  Score: Raw -20562.924372 + Penalty 420.000000 = -20142.924372
+  nChanged 13
+		SP:Iteration 8Q (56.347000 sec): 3 clusters
+  Score: Raw -20566.244762 + Penalty 420.000000 = -20146.244762
+  nChanged 13
+		SP:Iteration 9Q (56.350000 sec): 3 clusters
+  Score: Raw -20570.267703 + Penalty 420.000000 = -20150.267703
+  nChanged 8
+		SP:Iteration 10Q (56.354000 sec): 3 clusters
+  Score: Raw -20573.979604 + Penalty 420.000000 = -20153.979604
+  nChanged 10
+		SP:Iteration 11Q (56.357000 sec): 3 clusters
+  Score: Raw -20577.109383 + Penalty 420.000000 = -20157.109383
+  nChanged 5
+		SP:Iteration 12Q (56.362000 sec): 3 clusters
+  Score: Raw -20578.301768 + Penalty 420.000000 = -20158.301768
+  nChanged 6
+		SP:Iteration 13Q (56.366000 sec): 3 clusters
+  Score: Raw -20579.970696 + Penalty 420.000000 = -20159.970696
+  nChanged 6
+		SP:Iteration 14Q (56.370000 sec): 3 clusters
+  Score: Raw -20582.576345 + Penalty 420.000000 = -20162.576345
+  nChanged 6
+		SP:Iteration 15Q (56.374000 sec): 3 clusters
+  Score: Raw -20583.926964 + Penalty 420.000000 = -20163.926964
+  nChanged 4
+		SP:Iteration 16Q (56.401000 sec): 3 clusters
+  Score: Raw -20585.055509 + Penalty 420.000000 = -20165.055509
+  nChanged 5
+		SP:Iteration 17Q (56.405000 sec): 3 clusters
+  Score: Raw -20586.500442 + Penalty 420.000000 = -20166.500442
+  nChanged 6
+		SP:Iteration 18Q (56.412000 sec): 3 clusters
+  Score: Raw -20590.115402 + Penalty 420.000000 = -20170.115402
+  nChanged 8
+		SP:Iteration 19Q (56.416000 sec): 3 clusters
+  Score: Raw -20597.276428 + Penalty 420.000000 = -20177.276428
+  nChanged 12
+		SP:Iteration 20F (56.422000 sec): 3 clusters
+  Score: Raw -20601.119215 + Penalty 420.000000 = -20181.119215
+  nChanged 9
+		SP:Iteration 21Q (56.426000 sec): 3 clusters
+  Score: Raw -20606.874273 + Penalty 420.000000 = -20186.874273
+  nChanged 13
+		SP:Iteration 22Q (56.432000 sec): 3 clusters
+  Score: Raw -20615.216910 + Penalty 420.000000 = -20195.216910
+  nChanged 13
+		SP:Iteration 23Q (56.439000 sec): 3 clusters
+  Score: Raw -20621.756722 + Penalty 420.000000 = -20201.756722
+  nChanged 9
+		SP:Iteration 24Q (56.443000 sec): 3 clusters
+  Score: Raw -20624.929952 + Penalty 420.000000 = -20204.929952
+  nChanged 8
+		SP:Iteration 25Q (56.470000 sec): 3 clusters
+  Score: Raw -20627.329620 + Penalty 420.000000 = -20207.329620
+  nChanged 10
+		SP:Iteration 26Q (56.473000 sec): 3 clusters
+  Score: Raw -20630.068681 + Penalty 420.000000 = -20210.068681
+  nChanged 6
+		SP:Iteration 27Q (56.475000 sec): 3 clusters
+  Score: Raw -20631.720356 + Penalty 420.000000 = -20211.720356
+  nChanged 4
+		SP:Iteration 28Q (56.481000 sec): 3 clusters
+  Score: Raw -20633.208357 + Penalty 420.000000 = -20213.208357
+  nChanged 1
+		SP:Iteration 29Q (56.484000 sec): 3 clusters
+  Score: Raw -20633.537739 + Penalty 420.000000 = -20213.537739
+  nChanged 1
+		SP:Iteration 30Q (56.492000 sec): 3 clusters
+  Score: Raw -20634.202649 + Penalty 420.000000 = -20214.202649
+  nChanged 3
+		SP:Iteration 31Q (56.494000 sec): 3 clusters
+  Score: Raw -20634.797514 + Penalty 420.000000 = -20214.797514
+  nChanged 3
+		SP:Iteration 32Q (56.496000 sec): 3 clusters
+  Score: Raw -20635.415593 + Penalty 420.000000 = -20215.415593
+  nChanged 0
+		SP:Iteration 33F (56.502000 sec): 3 clusters
+  Score: Raw -20635.415593 + Penalty 420.000000 = -20215.415593
+  nChanged 0
+
+ Trying to split cluster 4 (620 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (56.505000 sec): 2 clusters
+  Score: Raw -10748.243978 + Penalty 210.000000 = -10538.243978
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (56.511000 sec): 3 clusters
+  Score: Raw -10479.916555 + Penalty 420.000000 = -10059.916555
+  nChanged 237
+		SP:Iteration 1F (56.514000 sec): 3 clusters
+  Score: Raw -10672.744183 + Penalty 420.000000 = -10252.744183
+  nChanged 58
+		SP:Iteration 2F (56.538000 sec): 3 clusters
+  Score: Raw -10738.734867 + Penalty 420.000000 = -10318.734867
+  nChanged 41
+		SP:Iteration 3F (56.540000 sec): 3 clusters
+  Score: Raw -10790.446406 + Penalty 420.000000 = -10370.446406
+  nChanged 23
+		SP:Iteration 4Q (56.542000 sec): 3 clusters
+  Score: Raw -10816.174587 + Penalty 420.000000 = -10396.174587
+  nChanged 6
+		SP:Iteration 5Q (56.543000 sec): 3 clusters
+  Score: Raw -10822.963402 + Penalty 420.000000 = -10402.963402
+  nChanged 5
+		SP:Iteration 6Q (56.548000 sec): 3 clusters
+  Score: Raw -10830.589328 + Penalty 420.000000 = -10410.589328
+  nChanged 6
+		SP:Iteration 7Q (56.550000 sec): 3 clusters
+  Score: Raw -10833.131644 + Penalty 420.000000 = -10413.131644
+  nChanged 1
+		SP:Iteration 8Q (56.552000 sec): 3 clusters
+  Score: Raw -10833.382143 + Penalty 420.000000 = -10413.382143
+  nChanged 1
+		SP:Iteration 9Q (56.558000 sec): 3 clusters
+  Score: Raw -10833.742215 + Penalty 420.000000 = -10413.742215
+  nChanged 0
+		SP:Iteration 10F (56.559000 sec): 3 clusters
+  Score: Raw -10833.742215 + Penalty 420.000000 = -10413.742215
+  nChanged 0
+
+ Trying to split cluster 5 (85046 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (56.695000 sec): 2 clusters
+  Score: Raw -1642318.124593 + Penalty 210.000000 = -1642108.124593
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (56.761000 sec): 3 clusters
+  Score: Raw -1585700.768272 + Penalty 420.000000 = -1585280.768272
+  nChanged 41435
+		SP:Iteration 1F (56.814000 sec): 3 clusters
+  Score: Raw -1612111.988130 + Penalty 420.000000 = -1611691.988130
+  nChanged 4002
+		SP:Iteration 2Q (56.879000 sec): 3 clusters
+  Score: Raw -1613891.323945 + Penalty 420.000000 = -1613471.323945
+  nChanged 4972
+		SP:Iteration 3F (56.944000 sec): 3 clusters
+  Score: Raw -1616764.951469 + Penalty 420.000000 = -1616344.951469
+  nChanged 5813
+		SP:Iteration 4F (57.049000 sec): 3 clusters
+  Score: Raw -1621097.573834 + Penalty 420.000000 = -1620677.573834
+  nChanged 6251
+		SP:Iteration 5F (57.116000 sec): 3 clusters
+  Score: Raw -1626833.409507 + Penalty 420.000000 = -1626413.409507
+  nChanged 5487
+		SP:Iteration 6F (57.179000 sec): 3 clusters
+  Score: Raw -1632327.690660 + Penalty 420.000000 = -1631907.690660
+  nChanged 3785
+		SP:Iteration 7Q (57.268000 sec): 3 clusters
+  Score: Raw -1636014.638864 + Penalty 420.000000 = -1635594.638864
+  nChanged 2349
+		SP:Iteration 8Q (57.347000 sec): 3 clusters
+  Score: Raw -1638192.735869 + Penalty 420.000000 = -1637772.735869
+  nChanged 1472
+		SP:Iteration 9Q (57.423000 sec): 3 clusters
+  Score: Raw -1639356.302646 + Penalty 420.000000 = -1638936.302646
+  nChanged 994
+		SP:Iteration 10Q (57.502000 sec): 3 clusters
+  Score: Raw -1640027.739766 + Penalty 420.000000 = -1639607.739766
+  nChanged 781
+		SP:Iteration 11Q (57.687000 sec): 3 clusters
+  Score: Raw -1640486.930235 + Penalty 420.000000 = -1640066.930235
+  nChanged 637
+		SP:Iteration 12Q (57.950000 sec): 3 clusters
+  Score: Raw -1640827.270855 + Penalty 420.000000 = -1640407.270855
+  nChanged 523
+		SP:Iteration 13Q (58.160000 sec): 3 clusters
+  Score: Raw -1641077.428125 + Penalty 420.000000 = -1640657.428125
+  nChanged 434
+		SP:Iteration 14Q (58.225000 sec): 3 clusters
+  Score: Raw -1641282.591752 + Penalty 420.000000 = -1640862.591752
+  nChanged 377
+		SP:Iteration 15Q (58.387000 sec): 3 clusters
+  Score: Raw -1641479.617554 + Penalty 420.000000 = -1641059.617554
+  nChanged 324
+		SP:Iteration 16Q (58.486000 sec): 3 clusters
+  Score: Raw -1641655.945091 + Penalty 420.000000 = -1641235.945091
+  nChanged 270
+		SP:Iteration 17Q (58.625000 sec): 3 clusters
+  Score: Raw -1641797.434512 + Penalty 420.000000 = -1641377.434512
+  nChanged 218
+		SP:Iteration 18Q (58.696000 sec): 3 clusters
+  Score: Raw -1641906.301039 + Penalty 420.000000 = -1641486.301039
+  nChanged 175
+		SP:Iteration 19Q (58.855000 sec): 3 clusters
+  Score: Raw -1641991.226340 + Penalty 420.000000 = -1641571.226340
+  nChanged 155
+		SP:Iteration 20F (58.945000 sec): 3 clusters
+  Score: Raw -1642071.032302 + Penalty 420.000000 = -1641651.032302
+  nChanged 129
+		SP:Iteration 21Q (59.099000 sec): 3 clusters
+  Score: Raw -1642133.674124 + Penalty 420.000000 = -1641713.674124
+  nChanged 104
+		SP:Iteration 22Q (59.222000 sec): 3 clusters
+  Score: Raw -1642179.102450 + Penalty 420.000000 = -1641759.102450
+  nChanged 85
+		SP:Iteration 23Q (59.347000 sec): 3 clusters
+  Score: Raw -1642214.114536 + Penalty 420.000000 = -1641794.114536
+  nChanged 66
+		SP:Iteration 24Q (59.545000 sec): 3 clusters
+  Score: Raw -1642240.979472 + Penalty 420.000000 = -1641820.979472
+  nChanged 55
+		SP:Iteration 25Q (59.632000 sec): 3 clusters
+  Score: Raw -1642266.350099 + Penalty 420.000000 = -1641846.350099
+  nChanged 57
+		SP:Iteration 26Q (59.804000 sec): 3 clusters
+  Score: Raw -1642289.140187 + Penalty 420.000000 = -1641869.140187
+  nChanged 42
+		SP:Iteration 27Q (59.893000 sec): 3 clusters
+  Score: Raw -1642305.266631 + Penalty 420.000000 = -1641885.266631
+  nChanged 33
+		SP:Iteration 28Q (60.036000 sec): 3 clusters
+  Score: Raw -1642319.910955 + Penalty 420.000000 = -1641899.910955
+  nChanged 26
+		SP:Iteration 29Q (60.123000 sec): 3 clusters
+  Score: Raw -1642331.075236 + Penalty 420.000000 = -1641911.075236
+  nChanged 18
+		SP:Iteration 30Q (60.260000 sec): 3 clusters
+  Score: Raw -1642337.479952 + Penalty 420.000000 = -1641917.479952
+  nChanged 21
+		SP:Iteration 31Q (60.335000 sec): 3 clusters
+  Score: Raw -1642344.770733 + Penalty 420.000000 = -1641924.770733
+  nChanged 17
+		SP:Iteration 32Q (60.497000 sec): 3 clusters
+  Score: Raw -1642350.424890 + Penalty 420.000000 = -1641930.424890
+  nChanged 12
+		SP:Iteration 33Q (60.573000 sec): 3 clusters
+  Score: Raw -1642354.149455 + Penalty 420.000000 = -1641934.149455
+  nChanged 7
+		SP:Iteration 34Q (60.727000 sec): 3 clusters
+  Score: Raw -1642356.093471 + Penalty 420.000000 = -1641936.093471
+  nChanged 8
+		SP:Iteration 35Q (60.805000 sec): 3 clusters
+  Score: Raw -1642357.898167 + Penalty 420.000000 = -1641937.898167
+  nChanged 6
+		SP:Iteration 36Q (60.942000 sec): 3 clusters
+  Score: Raw -1642359.428211 + Penalty 420.000000 = -1641939.428211
+  nChanged 6
+		SP:Iteration 37Q (61.017000 sec): 3 clusters
+  Score: Raw -1642360.966607 + Penalty 420.000000 = -1641940.966607
+  nChanged 4
+		SP:Iteration 38Q (61.164000 sec): 3 clusters
+  Score: Raw -1642361.665356 + Penalty 420.000000 = -1641941.665356
+  nChanged 2
+		SP:Iteration 39Q (61.243000 sec): 3 clusters
+  Score: Raw -1642362.073345 + Penalty 420.000000 = -1641942.073345
+  nChanged 3
+		SP:Iteration 40F (61.385000 sec): 3 clusters
+  Score: Raw -1642362.666906 + Penalty 420.000000 = -1641942.666906
+  nChanged 2
+		SP:Iteration 41Q (61.456000 sec): 3 clusters
+  Score: Raw -1642364.048049 + Penalty 420.000000 = -1641944.048049
+  nChanged 6
+		SP:Iteration 42Q (61.608000 sec): 3 clusters
+  Score: Raw -1642366.539420 + Penalty 420.000000 = -1641946.539420
+  nChanged 3
+		SP:Iteration 43Q (61.684000 sec): 3 clusters
+  Score: Raw -1642367.347910 + Penalty 420.000000 = -1641947.347910
+  nChanged 9
+		SP:Iteration 44Q (61.896000 sec): 3 clusters
+  Score: Raw -1642370.617481 + Penalty 420.000000 = -1641950.617481
+  nChanged 9
+		SP:Iteration 45Q (61.965000 sec): 3 clusters
+  Score: Raw -1642373.166292 + Penalty 420.000000 = -1641953.166292
+  nChanged 5
+		SP:Iteration 46Q (62.122000 sec): 3 clusters
+  Score: Raw -1642375.499046 + Penalty 420.000000 = -1641955.499046
+  nChanged 5
+		SP:Iteration 47Q (62.192000 sec): 3 clusters
+  Score: Raw -1642378.350230 + Penalty 420.000000 = -1641958.350230
+  nChanged 2
+		SP:Iteration 48Q (62.330000 sec): 3 clusters
+  Score: Raw -1642378.958738 + Penalty 420.000000 = -1641958.958738
+  nChanged 4
+		SP:Iteration 49Q (62.403000 sec): 3 clusters
+  Score: Raw -1642380.920798 + Penalty 420.000000 = -1641960.920798
+  nChanged 1
+		SP:Iteration 50Q (62.540000 sec): 3 clusters
+  Score: Raw -1642381.741807 + Penalty 420.000000 = -1641961.741807
+  nChanged 1
+		SP:Iteration 51Q (62.640000 sec): 3 clusters
+  Score: Raw -1642382.109987 + Penalty 420.000000 = -1641962.109987
+  nChanged 3
+		SP:Iteration 52Q (62.780000 sec): 3 clusters
+  Score: Raw -1642383.183816 + Penalty 420.000000 = -1641963.183816
+  nChanged 2
+		SP:Iteration 53Q (62.859000 sec): 3 clusters
+  Score: Raw -1642383.806308 + Penalty 420.000000 = -1641963.806308
+  nChanged 4
+		SP:Iteration 54Q (63.047000 sec): 3 clusters
+  Score: Raw -1642385.426068 + Penalty 420.000000 = -1641965.426068
+  nChanged 3
+		SP:Iteration 55Q (63.119000 sec): 3 clusters
+  Score: Raw -1642386.260496 + Penalty 420.000000 = -1641966.260496
+  nChanged 1
+		SP:Iteration 56Q (63.257000 sec): 3 clusters
+  Score: Raw -1642386.492496 + Penalty 420.000000 = -1641966.492496
+  nChanged 1
+		SP:Iteration 57Q (63.328000 sec): 3 clusters
+  Score: Raw -1642386.920158 + Penalty 420.000000 = -1641966.920158
+  nChanged 3
+		SP:Iteration 58Q (63.470000 sec): 3 clusters
+  Score: Raw -1642387.800471 + Penalty 420.000000 = -1641967.800471
+  nChanged 4
+		SP:Iteration 59Q (63.547000 sec): 3 clusters
+  Score: Raw -1642389.148446 + Penalty 420.000000 = -1641969.148446
+  nChanged 3
+		SP:Iteration 60F (63.668000 sec): 3 clusters
+  Score: Raw -1642389.963343 + Penalty 420.000000 = -1641969.963343
+  nChanged 2
+		SP:Iteration 61Q (63.770000 sec): 3 clusters
+  Score: Raw -1642390.320902 + Penalty 420.000000 = -1641970.320902
+  nChanged 3
+		SP:Iteration 62Q (63.960000 sec): 3 clusters
+  Score: Raw -1642391.297913 + Penalty 420.000000 = -1641971.297913
+  nChanged 4
+		SP:Iteration 63Q (64.055000 sec): 3 clusters
+  Score: Raw -1642393.173354 + Penalty 420.000000 = -1641973.173354
+  nChanged 6
+		SP:Iteration 64Q (64.234000 sec): 3 clusters
+  Score: Raw -1642396.035551 + Penalty 420.000000 = -1641976.035551
+  nChanged 7
+		SP:Iteration 65Q (64.465000 sec): 3 clusters
+  Score: Raw -1642398.117443 + Penalty 420.000000 = -1641978.117443
+  nChanged 3
+		SP:Iteration 66Q (64.733000 sec): 3 clusters
+  Score: Raw -1642398.906734 + Penalty 420.000000 = -1641978.906734
+  nChanged 5
+		SP:Iteration 67Q (64.865000 sec): 3 clusters
+  Score: Raw -1642400.769810 + Penalty 420.000000 = -1641980.769810
+  nChanged 3
+		SP:Iteration 68Q (64.962000 sec): 3 clusters
+  Score: Raw -1642401.953831 + Penalty 420.000000 = -1641981.953831
+  nChanged 4
+		SP:Iteration 69Q (65.207000 sec): 3 clusters
+  Score: Raw -1642403.707842 + Penalty 420.000000 = -1641983.707842
+  nChanged 5
+		SP:Iteration 70Q (65.340000 sec): 3 clusters
+  Score: Raw -1642406.050155 + Penalty 420.000000 = -1641986.050155
+  nChanged 6
+		SP:Iteration 71Q (65.477000 sec): 3 clusters
+  Score: Raw -1642409.223809 + Penalty 420.000000 = -1641989.223809
+  nChanged 6
+		SP:Iteration 72Q (65.679000 sec): 3 clusters
+  Score: Raw -1642411.025113 + Penalty 420.000000 = -1641991.025113
+  nChanged 1
+		SP:Iteration 73Q (65.754000 sec): 3 clusters
+  Score: Raw -1642411.191858 + Penalty 420.000000 = -1641991.191858
+  nChanged 1
+		SP:Iteration 74Q (65.910000 sec): 3 clusters
+  Score: Raw -1642411.409107 + Penalty 420.000000 = -1641991.409107
+  nChanged 2
+		SP:Iteration 75Q (65.985000 sec): 3 clusters
+  Score: Raw -1642411.781162 + Penalty 420.000000 = -1641991.781162
+  nChanged 2
+		SP:Iteration 76Q (66.223000 sec): 3 clusters
+  Score: Raw -1642412.499684 + Penalty 420.000000 = -1641992.499684
+  nChanged 3
+		SP:Iteration 77Q (66.445000 sec): 3 clusters
+  Score: Raw -1642413.082833 + Penalty 420.000000 = -1641993.082833
+  nChanged 0
+		SP:Iteration 78F (66.684000 sec): 3 clusters
+  Score: Raw -1642413.082833 + Penalty 420.000000 = -1641993.082833
+  nChanged 0
+
+ Trying to split cluster 6 (6245 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (66.833000 sec): 2 clusters
+  Score: Raw -104977.080475 + Penalty 210.000000 = -104767.080475
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (66.883000 sec): 3 clusters
+  Score: Raw -101221.444951 + Penalty 420.000000 = -100801.444951
+  nChanged 2828
+		SP:Iteration 1F (66.887000 sec): 3 clusters
+  Score: Raw -103007.927262 + Penalty 420.000000 = -102587.927262
+  nChanged 442
+		SP:Iteration 2F (66.895000 sec): 3 clusters
+  Score: Raw -103276.761134 + Penalty 420.000000 = -102856.761134
+  nChanged 425
+		SP:Iteration 3F (66.903000 sec): 3 clusters
+  Score: Raw -103566.048866 + Penalty 420.000000 = -103146.048866
+  nChanged 413
+		SP:Iteration 4F (66.908000 sec): 3 clusters
+  Score: Raw -103879.518246 + Penalty 420.000000 = -103459.518246
+  nChanged 366
+		SP:Iteration 5F (66.915000 sec): 3 clusters
+  Score: Raw -104164.121459 + Penalty 420.000000 = -103744.121459
+  nChanged 279
+		SP:Iteration 6Q (66.921000 sec): 3 clusters
+  Score: Raw -104400.130900 + Penalty 420.000000 = -103980.130900
+  nChanged 203
+		SP:Iteration 7Q (66.926000 sec): 3 clusters
+  Score: Raw -104595.906046 + Penalty 420.000000 = -104175.906046
+  nChanged 158
+		SP:Iteration 8Q (66.935000 sec): 3 clusters
+  Score: Raw -104750.469667 + Penalty 420.000000 = -104330.469667
+  nChanged 113
+		SP:Iteration 9Q (66.962000 sec): 3 clusters
+  Score: Raw -104864.806253 + Penalty 420.000000 = -104444.806253
+  nChanged 83
+		SP:Iteration 10Q (67.112000 sec): 3 clusters
+  Score: Raw -104943.679477 + Penalty 420.000000 = -104523.679477
+  nChanged 66
+		SP:Iteration 11Q (67.119000 sec): 3 clusters
+  Score: Raw -105004.202332 + Penalty 420.000000 = -104584.202332
+  nChanged 42
+		SP:Iteration 12Q (67.130000 sec): 3 clusters
+  Score: Raw -105035.943030 + Penalty 420.000000 = -104615.943030
+  nChanged 36
+		SP:Iteration 13Q (67.137000 sec): 3 clusters
+  Score: Raw -105064.352497 + Penalty 420.000000 = -104644.352497
+  nChanged 34
+		SP:Iteration 14Q (67.142000 sec): 3 clusters
+  Score: Raw -105090.507979 + Penalty 420.000000 = -104670.507979
+  nChanged 24
+		SP:Iteration 15Q (67.149000 sec): 3 clusters
+  Score: Raw -105104.130852 + Penalty 420.000000 = -104684.130852
+  nChanged 19
+		SP:Iteration 16Q (67.155000 sec): 3 clusters
+  Score: Raw -105117.401153 + Penalty 420.000000 = -104697.401153
+  nChanged 24
+		SP:Iteration 17Q (67.163000 sec): 3 clusters
+  Score: Raw -105138.467126 + Penalty 420.000000 = -104718.467126
+  nChanged 20
+		SP:Iteration 18Q (67.170000 sec): 3 clusters
+  Score: Raw -105150.704939 + Penalty 420.000000 = -104730.704939
+  nChanged 15
+		SP:Iteration 19Q (67.221000 sec): 3 clusters
+  Score: Raw -105161.823729 + Penalty 420.000000 = -104741.823729
+  nChanged 13
+		SP:Iteration 20F (67.304000 sec): 3 clusters
+  Score: Raw -105168.104967 + Penalty 420.000000 = -104748.104967
+  nChanged 7
+		SP:Iteration 21Q (67.310000 sec): 3 clusters
+  Score: Raw -105173.428924 + Penalty 420.000000 = -104753.428924
+  nChanged 5
+		SP:Iteration 22Q (67.319000 sec): 3 clusters
+  Score: Raw -105176.674611 + Penalty 420.000000 = -104756.674611
+  nChanged 6
+		SP:Iteration 23Q (67.334000 sec): 3 clusters
+  Score: Raw -105187.431672 + Penalty 420.000000 = -104767.431672
+  nChanged 7
+		SP:Iteration 24Q (67.361000 sec): 3 clusters
+  Score: Raw -105193.180010 + Penalty 420.000000 = -104773.180010
+  nChanged 6
+		SP:Iteration 25Q (67.484000 sec): 3 clusters
+  Score: Raw -105195.039251 + Penalty 420.000000 = -104775.039251
+  nChanged 3
+		SP:Iteration 26Q (67.545000 sec): 3 clusters
+  Score: Raw -105196.069196 + Penalty 420.000000 = -104776.069196
+  nChanged 2
+		SP:Iteration 27Q (67.567000 sec): 3 clusters
+  Score: Raw -105196.708270 + Penalty 420.000000 = -104776.708270
+  nChanged 3
+		SP:Iteration 28Q (67.572000 sec): 3 clusters
+  Score: Raw -105199.015313 + Penalty 420.000000 = -104779.015313
+  nChanged 4
+		SP:Iteration 29Q (67.578000 sec): 3 clusters
+  Score: Raw -105202.488921 + Penalty 420.000000 = -104782.488921
+  nChanged 2
+		SP:Iteration 30Q (67.585000 sec): 3 clusters
+  Score: Raw -105205.302312 + Penalty 420.000000 = -104785.302312
+  nChanged 3
+		SP:Iteration 31Q (67.595000 sec): 3 clusters
+  Score: Raw -105206.788549 + Penalty 420.000000 = -104786.788549
+  nChanged 1
+		SP:Iteration 32Q (67.601000 sec): 3 clusters
+  Score: Raw -105207.319533 + Penalty 420.000000 = -104787.319533
+  nChanged 3
+		SP:Iteration 33Q (67.606000 sec): 3 clusters
+  Score: Raw -105208.662481 + Penalty 420.000000 = -104788.662481
+  nChanged 2
+		SP:Iteration 34Q (67.611000 sec): 3 clusters
+  Score: Raw -105209.379619 + Penalty 420.000000 = -104789.379619
+  nChanged 1
+		SP:Iteration 35Q (67.643000 sec): 3 clusters
+  Score: Raw -105209.887507 + Penalty 420.000000 = -104789.887507
+  nChanged 1
+		SP:Iteration 36Q (67.852000 sec): 3 clusters
+  Score: Raw -105213.530925 + Penalty 420.000000 = -104793.530925
+  nChanged 2
+		SP:Iteration 37Q (67.858000 sec): 3 clusters
+  Score: Raw -105217.100544 + Penalty 420.000000 = -104797.100544
+  nChanged 2
+		SP:Iteration 38Q (67.863000 sec): 3 clusters
+  Score: Raw -105217.865748 + Penalty 420.000000 = -104797.865748
+  nChanged 2
+		SP:Iteration 39Q (67.871000 sec): 3 clusters
+  Score: Raw -105218.602617 + Penalty 420.000000 = -104798.602617
+  nChanged 1
+		SP:Iteration 40F (67.877000 sec): 3 clusters
+  Score: Raw -105218.857030 + Penalty 420.000000 = -104798.857030
+  nChanged 0
+  Score: Raw -2721966.006029 + Penalty 1680.000000 = -2720286.006029
+
+Splitting cluster 6 changes total score from -2720254.098232 to -2720286.006029
+
+ So it's getting split into cluster 7.
+Iteration 99Q (68.373000 sec): 8 clusters
+  Score: Raw -2722019.678643 + Penalty 1680.000000 = -2720339.678643
+  nChanged 141
+Iteration 100F (68.595000 sec): 8 clusters
+  Score: Raw -2722081.916970 + Penalty 1680.000000 = -2720401.916970
+  nChanged 164
+Iteration 101Q (68.791000 sec): 8 clusters
+  Score: Raw -2722115.426755 + Penalty 1680.000000 = -2720435.426755
+  nChanged 96
+Iteration 102Q (69.022000 sec): 8 clusters
+  Score: Raw -2722133.702675 + Penalty 1680.000000 = -2720453.702675
+  nChanged 72
+Iteration 103Q (69.222000 sec): 8 clusters
+  Score: Raw -2722149.747306 + Penalty 1680.000000 = -2720469.747306
+  nChanged 52
+Iteration 104Q (69.506000 sec): 8 clusters
+  Score: Raw -2722165.026053 + Penalty 1680.000000 = -2720485.026053
+  nChanged 56
+Iteration 105Q (69.779000 sec): 8 clusters
+  Score: Raw -2722176.892906 + Penalty 1680.000000 = -2720496.892906
+  nChanged 54
+Iteration 106Q (70.118000 sec): 8 clusters
+  Score: Raw -2722191.924718 + Penalty 1680.000000 = -2720511.924718
+  nChanged 43
+Iteration 107Q (70.354000 sec): 8 clusters
+  Score: Raw -2722201.682482 + Penalty 1680.000000 = -2720521.682482
+  nChanged 30
+Iteration 108Q (70.531000 sec): 8 clusters
+  Score: Raw -2722208.111963 + Penalty 1680.000000 = -2720528.111963
+  nChanged 18
+Iteration 109Q (70.775000 sec): 8 clusters
+  Score: Raw -2722211.412311 + Penalty 1680.000000 = -2720531.412311
+  nChanged 14
+Iteration 110Q (70.995000 sec): 8 clusters
+  Score: Raw -2722212.876941 + Penalty 1680.000000 = -2720532.876941
+  nChanged 7
+Iteration 111Q (71.301000 sec): 8 clusters
+  Score: Raw -2722214.710722 + Penalty 1680.000000 = -2720534.710722
+  nChanged 7
+Iteration 112Q (71.560000 sec): 8 clusters
+  Score: Raw -2722216.127267 + Penalty 1680.000000 = -2720536.127267
+  nChanged 8
+Iteration 113Q (71.790000 sec): 8 clusters
+  Score: Raw -2722217.193080 + Penalty 1680.000000 = -2720537.193080
+  nChanged 9
+Iteration 114Q (72.057000 sec): 8 clusters
+  Score: Raw -2722218.772041 + Penalty 1680.000000 = -2720538.772041
+  nChanged 12
+Iteration 115Q (72.274000 sec): 8 clusters
+  Score: Raw -2722220.474301 + Penalty 1680.000000 = -2720540.474301
+  nChanged 9
+Iteration 116Q (72.424000 sec): 8 clusters
+  Score: Raw -2722221.068356 + Penalty 1680.000000 = -2720541.068356
+  nChanged 7
+Iteration 117Q (72.683000 sec): 8 clusters
+  Score: Raw -2722221.702754 + Penalty 1680.000000 = -2720541.702754
+  nChanged 4
+Iteration 118Q (72.877000 sec): 8 clusters
+  Score: Raw -2722222.342876 + Penalty 1680.000000 = -2720542.342876
+  nChanged 3
+Iteration 119Q (73.160000 sec): 8 clusters
+  Score: Raw -2722222.734896 + Penalty 1680.000000 = -2720542.734896
+  nChanged 2
+Iteration 120F (73.478000 sec): 8 clusters
+  Score: Raw -2722224.146451 + Penalty 1680.000000 = -2720544.146451
+  nChanged 3
+Iteration 121Q (73.753000 sec): 8 clusters
+  Score: Raw -2722224.991319 + Penalty 1680.000000 = -2720544.991319
+  nChanged 0
+Iteration 122F (74.022000 sec): 8 clusters
+  Score: Raw -2722224.991319 + Penalty 1680.000000 = -2720544.991319
+  nChanged 0
+Compute initial score before splitting:   Score: Raw -2722224.991319 + Penalty 1680.000000 = -2720544.991319
+
+ Trying to split cluster 1 (54725 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (74.433000 sec): 2 clusters
+  Score: Raw -1062980.652734 + Penalty 210.000000 = -1062770.652734
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (74.496000 sec): 3 clusters
+  Score: Raw -1026815.353267 + Penalty 420.000000 = -1026395.353267
+  nChanged 26461
+		SP:Iteration 1F (74.592000 sec): 3 clusters
+  Score: Raw -1042727.396328 + Penalty 420.000000 = -1042307.396328
+  nChanged 2782
+		SP:Iteration 2F (74.673000 sec): 3 clusters
+  Score: Raw -1043984.084049 + Penalty 420.000000 = -1043564.084049
+  nChanged 3812
+		SP:Iteration 3F (74.715000 sec): 3 clusters
+  Score: Raw -1046357.738803 + Penalty 420.000000 = -1045937.738803
+  nChanged 4896
+		SP:Iteration 4F (74.781000 sec): 3 clusters
+  Score: Raw -1050474.749794 + Penalty 420.000000 = -1050054.749794
+  nChanged 5282
+		SP:Iteration 5F (74.988000 sec): 3 clusters
+  Score: Raw -1055911.330939 + Penalty 420.000000 = -1055491.330939
+  nChanged 4020
+		SP:Iteration 6F (75.069000 sec): 3 clusters
+  Score: Raw -1060329.524074 + Penalty 420.000000 = -1059909.524074
+  nChanged 1921
+		SP:Iteration 7Q (75.178000 sec): 3 clusters
+  Score: Raw -1062357.802948 + Penalty 420.000000 = -1061937.802948
+  nChanged 536
+		SP:Iteration 8Q (75.247000 sec): 3 clusters
+  Score: Raw -1062880.186718 + Penalty 420.000000 = -1062460.186718
+  nChanged 97
+		SP:Iteration 9Q (75.311000 sec): 3 clusters
+  Score: Raw -1062981.640024 + Penalty 420.000000 = -1062561.640024
+  nChanged 26
+		SP:Iteration 10Q (75.543000 sec): 3 clusters
+  Score: Raw -1063020.533807 + Penalty 420.000000 = -1062600.533807
+  nChanged 8
+		SP:Iteration 11Q (75.580000 sec): 3 clusters
+  Score: Raw -1063036.560297 + Penalty 420.000000 = -1062616.560297
+  nChanged 8
+		SP:Iteration 12Q (75.659000 sec): 3 clusters
+  Score: Raw -1063052.958576 + Penalty 420.000000 = -1062632.958576
+  nChanged 5
+		SP:Iteration 13Q (75.840000 sec): 3 clusters
+  Score: Raw -1063056.660490 + Penalty 420.000000 = -1062636.660490
+  nChanged 0
+		SP:Iteration 14F (75.895000 sec): 3 clusters
+  Score: Raw -1063056.660490 + Penalty 420.000000 = -1062636.660490
+  nChanged 0
+
+ Trying to split cluster 2 (883 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (75.937000 sec): 2 clusters
+  Score: Raw -16766.286352 + Penalty 210.000000 = -16556.286352
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (76.002000 sec): 3 clusters
+  Score: Raw -16341.607076 + Penalty 420.000000 = -15921.607076
+  nChanged 329
+		SP:Iteration 1F (76.081000 sec): 3 clusters
+  Score: Raw -16556.327476 + Penalty 420.000000 = -16136.327476
+  nChanged 77
+		SP:Iteration 2F (76.083000 sec): 3 clusters
+  Score: Raw -16606.755660 + Penalty 420.000000 = -16186.755660
+  nChanged 41
+		SP:Iteration 3Q (76.085000 sec): 3 clusters
+  Score: Raw -16631.345181 + Penalty 420.000000 = -16211.345181
+  nChanged 30
+		SP:Iteration 4Q (76.088000 sec): 3 clusters
+  Score: Raw -16651.701026 + Penalty 420.000000 = -16231.701026
+  nChanged 28
+		SP:Iteration 5Q (76.091000 sec): 3 clusters
+  Score: Raw -16669.019812 + Penalty 420.000000 = -16249.019812
+  nChanged 22
+		SP:Iteration 6Q (76.093000 sec): 3 clusters
+  Score: Raw -16686.136601 + Penalty 420.000000 = -16266.136601
+  nChanged 18
+		SP:Iteration 7Q (76.096000 sec): 3 clusters
+  Score: Raw -16697.914481 + Penalty 420.000000 = -16277.914481
+  nChanged 13
+		SP:Iteration 8Q (76.100000 sec): 3 clusters
+  Score: Raw -16708.367939 + Penalty 420.000000 = -16288.367939
+  nChanged 12
+		SP:Iteration 9Q (76.102000 sec): 3 clusters
+  Score: Raw -16714.851697 + Penalty 420.000000 = -16294.851697
+  nChanged 12
+		SP:Iteration 10Q (76.104000 sec): 3 clusters
+  Score: Raw -16721.319894 + Penalty 420.000000 = -16301.319894
+  nChanged 10
+		SP:Iteration 11Q (76.107000 sec): 3 clusters
+  Score: Raw -16725.937521 + Penalty 420.000000 = -16305.937521
+  nChanged 5
+		SP:Iteration 12Q (76.112000 sec): 3 clusters
+  Score: Raw -16728.973390 + Penalty 420.000000 = -16308.973390
+  nChanged 5
+		SP:Iteration 13Q (76.114000 sec): 3 clusters
+  Score: Raw -16731.265083 + Penalty 420.000000 = -16311.265083
+  nChanged 5
+		SP:Iteration 14Q (76.119000 sec): 3 clusters
+  Score: Raw -16733.150742 + Penalty 420.000000 = -16313.150742
+  nChanged 3
+		SP:Iteration 15Q (76.122000 sec): 3 clusters
+  Score: Raw -16734.628361 + Penalty 420.000000 = -16314.628361
+  nChanged 2
+		SP:Iteration 16Q (76.158000 sec): 3 clusters
+  Score: Raw -16735.225616 + Penalty 420.000000 = -16315.225616
+  nChanged 1
+		SP:Iteration 17Q (76.309000 sec): 3 clusters
+  Score: Raw -16735.529332 + Penalty 420.000000 = -16315.529332
+  nChanged 3
+		SP:Iteration 18Q (76.355000 sec): 3 clusters
+  Score: Raw -16736.289898 + Penalty 420.000000 = -16316.289898
+  nChanged 1
+		SP:Iteration 19Q (76.357000 sec): 3 clusters
+  Score: Raw -16736.401688 + Penalty 420.000000 = -16316.401688
+  nChanged 0
+		SP:Iteration 20F (76.360000 sec): 3 clusters
+  Score: Raw -16736.401688 + Penalty 420.000000 = -16316.401688
+  nChanged 0
+
+ Trying to split cluster 3 (1094 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (76.365000 sec): 2 clusters
+  Score: Raw -20392.261413 + Penalty 210.000000 = -20182.261413
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (76.368000 sec): 3 clusters
+  Score: Raw -19844.773049 + Penalty 420.000000 = -19424.773049
+  nChanged 426
+		SP:Iteration 1F (76.371000 sec): 3 clusters
+  Score: Raw -20098.042545 + Penalty 420.000000 = -19678.042545
+  nChanged 88
+		SP:Iteration 2F (76.376000 sec): 3 clusters
+  Score: Raw -20155.649968 + Penalty 420.000000 = -19735.649968
+  nChanged 61
+		SP:Iteration 3F (76.380000 sec): 3 clusters
+  Score: Raw -20188.833244 + Penalty 420.000000 = -19768.833244
+  nChanged 38
+		SP:Iteration 4Q (76.383000 sec): 3 clusters
+  Score: Raw -20207.555357 + Penalty 420.000000 = -19787.555357
+  nChanged 28
+		SP:Iteration 5Q (76.413000 sec): 3 clusters
+  Score: Raw -20230.780713 + Penalty 420.000000 = -19810.780713
+  nChanged 23
+		SP:Iteration 6Q (76.448000 sec): 3 clusters
+  Score: Raw -20251.234862 + Penalty 420.000000 = -19831.234862
+  nChanged 30
+		SP:Iteration 7Q (76.481000 sec): 3 clusters
+  Score: Raw -20271.498847 + Penalty 420.000000 = -19851.498847
+  nChanged 28
+		SP:Iteration 8Q (76.504000 sec): 3 clusters
+  Score: Raw -20290.506116 + Penalty 420.000000 = -19870.506116
+  nChanged 27
+		SP:Iteration 9Q (76.526000 sec): 3 clusters
+  Score: Raw -20312.878874 + Penalty 420.000000 = -19892.878874
+  nChanged 18
+		SP:Iteration 10Q (76.546000 sec): 3 clusters
+  Score: Raw -20323.273180 + Penalty 420.000000 = -19903.273180
+  nChanged 13
+		SP:Iteration 11Q (76.567000 sec): 3 clusters
+  Score: Raw -20331.116914 + Penalty 420.000000 = -19911.116914
+  nChanged 22
+		SP:Iteration 12Q (76.586000 sec): 3 clusters
+  Score: Raw -20342.415670 + Penalty 420.000000 = -19922.415670
+  nChanged 20
+		SP:Iteration 13Q (76.589000 sec): 3 clusters
+  Score: Raw -20352.262977 + Penalty 420.000000 = -19932.262977
+  nChanged 12
+		SP:Iteration 14Q (76.591000 sec): 3 clusters
+  Score: Raw -20356.134801 + Penalty 420.000000 = -19936.134801
+  nChanged 5
+		SP:Iteration 15Q (76.623000 sec): 3 clusters
+  Score: Raw -20357.323376 + Penalty 420.000000 = -19937.323376
+  nChanged 2
+		SP:Iteration 16Q (76.626000 sec): 3 clusters
+  Score: Raw -20357.673968 + Penalty 420.000000 = -19937.673968
+  nChanged 2
+		SP:Iteration 17Q (76.629000 sec): 3 clusters
+  Score: Raw -20360.321706 + Penalty 420.000000 = -19940.321706
+  nChanged 6
+		SP:Iteration 18Q (76.631000 sec): 3 clusters
+  Score: Raw -20364.581021 + Penalty 420.000000 = -19944.581021
+  nChanged 9
+		SP:Iteration 19Q (76.635000 sec): 3 clusters
+  Score: Raw -20372.764089 + Penalty 420.000000 = -19952.764089
+  nChanged 10
+		SP:Iteration 20F (76.638000 sec): 3 clusters
+  Score: Raw -20378.044626 + Penalty 420.000000 = -19958.044626
+  nChanged 5
+		SP:Iteration 21Q (76.642000 sec): 3 clusters
+  Score: Raw -20380.246988 + Penalty 420.000000 = -19960.246988
+  nChanged 5
+		SP:Iteration 22Q (76.647000 sec): 3 clusters
+  Score: Raw -20383.642090 + Penalty 420.000000 = -19963.642090
+  nChanged 6
+		SP:Iteration 23Q (76.650000 sec): 3 clusters
+  Score: Raw -20387.504532 + Penalty 420.000000 = -19967.504532
+  nChanged 5
+		SP:Iteration 24Q (76.654000 sec): 3 clusters
+  Score: Raw -20389.668684 + Penalty 420.000000 = -19969.668684
+  nChanged 2
+		SP:Iteration 25Q (76.728000 sec): 3 clusters
+  Score: Raw -20390.150294 + Penalty 420.000000 = -19970.150294
+  nChanged 1
+		SP:Iteration 26Q (76.845000 sec): 3 clusters
+  Score: Raw -20390.558386 + Penalty 420.000000 = -19970.558386
+  nChanged 2
+		SP:Iteration 27Q (76.858000 sec): 3 clusters
+  Score: Raw -20391.313225 + Penalty 420.000000 = -19971.313225
+  nChanged 3
+		SP:Iteration 28Q (76.863000 sec): 3 clusters
+  Score: Raw -20392.065470 + Penalty 420.000000 = -19972.065470
+  nChanged 2
+		SP:Iteration 29Q (76.870000 sec): 3 clusters
+  Score: Raw -20392.523520 + Penalty 420.000000 = -19972.523520
+  nChanged 1
+		SP:Iteration 30Q (76.873000 sec): 3 clusters
+  Score: Raw -20392.824160 + Penalty 420.000000 = -19972.824160
+  nChanged 0
+		SP:Iteration 31F (76.877000 sec): 3 clusters
+  Score: Raw -20392.824160 + Penalty 420.000000 = -19972.824160
+  nChanged 0
+
+ Trying to split cluster 4 (550 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (76.982000 sec): 2 clusters
+  Score: Raw -9449.079416 + Penalty 210.000000 = -9239.079416
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (77.014000 sec): 3 clusters
+  Score: Raw -9228.724757 + Penalty 420.000000 = -8808.724757
+  nChanged 180
+		SP:Iteration 1F (77.038000 sec): 3 clusters
+  Score: Raw -9359.178989 + Penalty 420.000000 = -8939.178989
+  nChanged 39
+		SP:Iteration 2F (77.068000 sec): 3 clusters
+  Score: Raw -9398.070150 + Penalty 420.000000 = -8978.070150
+  nChanged 22
+		SP:Iteration 3Q (77.092000 sec): 3 clusters
+  Score: Raw -9413.927161 + Penalty 420.000000 = -8993.927161
+  nChanged 14
+		SP:Iteration 4Q (77.107000 sec): 3 clusters
+  Score: Raw -9428.974374 + Penalty 420.000000 = -9008.974374
+  nChanged 14
+		SP:Iteration 5Q (77.109000 sec): 3 clusters
+  Score: Raw -9440.001250 + Penalty 420.000000 = -9020.001250
+  nChanged 12
+		SP:Iteration 6Q (77.111000 sec): 3 clusters
+  Score: Raw -9447.616916 + Penalty 420.000000 = -9027.616916
+  nChanged 14
+		SP:Iteration 7Q (77.115000 sec): 3 clusters
+  Score: Raw -9464.450199 + Penalty 420.000000 = -9044.450199
+  nChanged 17
+		SP:Iteration 8Q (77.118000 sec): 3 clusters
+  Score: Raw -9485.815438 + Penalty 420.000000 = -9065.815438
+  nChanged 17
+		SP:Iteration 9Q (77.120000 sec): 3 clusters
+  Score: Raw -9500.459720 + Penalty 420.000000 = -9080.459720
+  nChanged 15
+		SP:Iteration 10Q (77.124000 sec): 3 clusters
+  Score: Raw -9512.748518 + Penalty 420.000000 = -9092.748518
+  nChanged 13
+		SP:Iteration 11Q (77.126000 sec): 3 clusters
+  Score: Raw -9522.333200 + Penalty 420.000000 = -9102.333200
+  nChanged 8
+		SP:Iteration 12Q (77.129000 sec): 3 clusters
+  Score: Raw -9531.890138 + Penalty 420.000000 = -9111.890138
+  nChanged 9
+		SP:Iteration 13Q (77.131000 sec): 3 clusters
+  Score: Raw -9540.691274 + Penalty 420.000000 = -9120.691274
+  nChanged 6
+		SP:Iteration 14Q (77.134000 sec): 3 clusters
+  Score: Raw -9548.455079 + Penalty 420.000000 = -9128.455079
+  nChanged 6
+		SP:Iteration 15Q (77.136000 sec): 3 clusters
+  Score: Raw -9554.304925 + Penalty 420.000000 = -9134.304925
+  nChanged 3
+		SP:Iteration 16Q (77.161000 sec): 3 clusters
+  Score: Raw -9555.685066 + Penalty 420.000000 = -9135.685066
+  nChanged 3
+		SP:Iteration 17Q (77.220000 sec): 3 clusters
+  Score: Raw -9557.406998 + Penalty 420.000000 = -9137.406998
+  nChanged 4
+		SP:Iteration 18Q (77.335000 sec): 3 clusters
+  Score: Raw -9560.314280 + Penalty 420.000000 = -9140.314280
+  nChanged 5
+		SP:Iteration 19Q (77.337000 sec): 3 clusters
+  Score: Raw -9565.498039 + Penalty 420.000000 = -9145.498039
+  nChanged 6
+		SP:Iteration 20F (77.340000 sec): 3 clusters
+  Score: Raw -9574.415140 + Penalty 420.000000 = -9154.415140
+  nChanged 11
+		SP:Iteration 21Q (77.342000 sec): 3 clusters
+  Score: Raw -9587.632024 + Penalty 420.000000 = -9167.632024
+  nChanged 9
+		SP:Iteration 22Q (77.343000 sec): 3 clusters
+  Score: Raw -9596.700629 + Penalty 420.000000 = -9176.700629
+  nChanged 7
+		SP:Iteration 23Q (77.346000 sec): 3 clusters
+  Score: Raw -9603.256220 + Penalty 420.000000 = -9183.256220
+  nChanged 3
+		SP:Iteration 24Q (77.349000 sec): 3 clusters
+  Score: Raw -9609.219574 + Penalty 420.000000 = -9189.219574
+  nChanged 7
+		SP:Iteration 25Q (77.351000 sec): 3 clusters
+  Score: Raw -9615.420544 + Penalty 420.000000 = -9195.420544
+  nChanged 6
+		SP:Iteration 26Q (77.439000 sec): 3 clusters
+  Score: Raw -9620.343245 + Penalty 420.000000 = -9200.343245
+  nChanged 3
+		SP:Iteration 27Q (77.666000 sec): 3 clusters
+  Score: Raw -9623.020525 + Penalty 420.000000 = -9203.020525
+  nChanged 1
+		SP:Iteration 28Q (77.669000 sec): 3 clusters
+  Score: Raw -9623.525860 + Penalty 420.000000 = -9203.525860
+  nChanged 3
+		SP:Iteration 29Q (77.670000 sec): 3 clusters
+  Score: Raw -9624.666686 + Penalty 420.000000 = -9204.666686
+  nChanged 3
+		SP:Iteration 30Q (77.672000 sec): 3 clusters
+  Score: Raw -9631.827750 + Penalty 420.000000 = -9211.827750
+  nChanged 4
+		SP:Iteration 31Q (77.674000 sec): 3 clusters
+  Score: Raw -9633.929923 + Penalty 420.000000 = -9213.929923
+  nChanged 2
+		SP:Iteration 32Q (77.677000 sec): 3 clusters
+  Score: Raw -9635.796281 + Penalty 420.000000 = -9215.796281
+  nChanged 3
+		SP:Iteration 33Q (77.680000 sec): 3 clusters
+  Score: Raw -9639.466105 + Penalty 420.000000 = -9219.466105
+  nChanged 2
+		SP:Iteration 34Q (77.682000 sec): 3 clusters
+  Score: Raw -9640.845415 + Penalty 420.000000 = -9220.845415
+  nChanged 4
+		SP:Iteration 35Q (77.687000 sec): 3 clusters
+  Score: Raw -9644.934652 + Penalty 420.000000 = -9224.934652
+  nChanged 4
+		SP:Iteration 36Q (77.688000 sec): 3 clusters
+  Score: Raw -9650.969340 + Penalty 420.000000 = -9230.969340
+  nChanged 2
+		SP:Iteration 37Q (77.690000 sec): 3 clusters
+  Score: Raw -9652.422045 + Penalty 420.000000 = -9232.422045
+  nChanged 0
+		SP:Iteration 38F (77.692000 sec): 3 clusters
+  Score: Raw -9652.422045 + Penalty 420.000000 = -9232.422045
+  nChanged 0
+
+ Trying to split cluster 5 (85103 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (77.798000 sec): 2 clusters
+  Score: Raw -1643322.536458 + Penalty 210.000000 = -1643112.536458
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (77.876000 sec): 3 clusters
+  Score: Raw -1586569.032713 + Penalty 420.000000 = -1586149.032713
+  nChanged 41493
+		SP:Iteration 1F (77.963000 sec): 3 clusters
+  Score: Raw -1610893.979489 + Penalty 420.000000 = -1610473.979489
+  nChanged 2292
+		SP:Iteration 2Q (78.142000 sec): 3 clusters
+  Score: Raw -1611390.156566 + Penalty 420.000000 = -1610970.156566
+  nChanged 2411
+		SP:Iteration 3Q (78.248000 sec): 3 clusters
+  Score: Raw -1612018.214438 + Penalty 420.000000 = -1611598.214438
+  nChanged 2604
+		SP:Iteration 4Q (78.339000 sec): 3 clusters
+  Score: Raw -1612911.158930 + Penalty 420.000000 = -1612491.158930
+  nChanged 3193
+		SP:Iteration 5Q (78.417000 sec): 3 clusters
+  Score: Raw -1614288.927422 + Penalty 420.000000 = -1613868.927422
+  nChanged 4039
+		SP:Iteration 6Q (78.485000 sec): 3 clusters
+  Score: Raw -1616503.788645 + Penalty 420.000000 = -1616083.788645
+  nChanged 5377
+		SP:Iteration 7F (78.578000 sec): 3 clusters
+  Score: Raw -1620135.592827 + Penalty 420.000000 = -1619715.592827
+  nChanged 6762
+		SP:Iteration 8F (78.749000 sec): 3 clusters
+  Score: Raw -1625497.406866 + Penalty 420.000000 = -1625077.406866
+  nChanged 7311
+		SP:Iteration 9F (78.878000 sec): 3 clusters
+  Score: Raw -1631977.603883 + Penalty 420.000000 = -1631557.603883
+  nChanged 6039
+		SP:Iteration 10F (79.003000 sec): 3 clusters
+  Score: Raw -1637469.014012 + Penalty 420.000000 = -1637049.014012
+  nChanged 3848
+		SP:Iteration 11Q (79.144000 sec): 3 clusters
+  Score: Raw -1640933.173612 + Penalty 420.000000 = -1640513.173612
+  nChanged 1819
+		SP:Iteration 12Q (79.343000 sec): 3 clusters
+  Score: Raw -1642484.977891 + Penalty 420.000000 = -1642064.977891
+  nChanged 657
+		SP:Iteration 13Q (79.422000 sec): 3 clusters
+  Score: Raw -1643011.938175 + Penalty 420.000000 = -1642591.938175
+  nChanged 242
+		SP:Iteration 14Q (79.499000 sec): 3 clusters
+  Score: Raw -1643217.580247 + Penalty 420.000000 = -1642797.580247
+  nChanged 99
+		SP:Iteration 15Q (79.576000 sec): 3 clusters
+  Score: Raw -1643319.827774 + Penalty 420.000000 = -1642899.827774
+  nChanged 36
+		SP:Iteration 16Q (79.645000 sec): 3 clusters
+  Score: Raw -1643355.657447 + Penalty 420.000000 = -1642935.657447
+  nChanged 21
+		SP:Iteration 17Q (79.723000 sec): 3 clusters
+  Score: Raw -1643379.788590 + Penalty 420.000000 = -1642959.788590
+  nChanged 12
+		SP:Iteration 18Q (79.814000 sec): 3 clusters
+  Score: Raw -1643396.999500 + Penalty 420.000000 = -1642976.999500
+  nChanged 5
+		SP:Iteration 19Q (79.892000 sec): 3 clusters
+  Score: Raw -1643403.585320 + Penalty 420.000000 = -1642983.585320
+  nChanged 2
+		SP:Iteration 20F (79.973000 sec): 3 clusters
+  Score: Raw -1643407.777328 + Penalty 420.000000 = -1642987.777328
+  nChanged 4
+		SP:Iteration 21Q (80.066000 sec): 3 clusters
+  Score: Raw -1643410.897676 + Penalty 420.000000 = -1642990.897676
+  nChanged 0
+		SP:Iteration 22F (80.141000 sec): 3 clusters
+  Score: Raw -1643410.897676 + Penalty 420.000000 = -1642990.897676
+  nChanged 0
+
+ Trying to split cluster 6 (317 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (80.154000 sec): 2 clusters
+  Score: Raw -6499.878801 + Penalty 210.000000 = -6289.878801
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (80.158000 sec): 3 clusters
+  Score: Raw -6394.920444 + Penalty 420.000000 = -5974.920444
+  nChanged 90
+		SP:Iteration 1F (80.160000 sec): 3 clusters
+  Score: Raw -6468.295485 + Penalty 420.000000 = -6048.295485
+  nChanged 20
+		SP:Iteration 2F (80.162000 sec): 3 clusters
+  Score: Raw -6500.175949 + Penalty 420.000000 = -6080.175949
+  nChanged 14
+		SP:Iteration 3Q (80.165000 sec): 3 clusters
+  Score: Raw -6516.774801 + Penalty 420.000000 = -6096.774801
+  nChanged 8
+		SP:Iteration 4Q (80.167000 sec): 3 clusters
+  Score: Raw -6528.506801 + Penalty 420.000000 = -6108.506801
+  nChanged 3
+		SP:Iteration 5Q (80.169000 sec): 3 clusters
+  Score: Raw -6533.408576 + Penalty 420.000000 = -6113.408576
+  nChanged 3
+		SP:Iteration 6Q (80.213000 sec): 3 clusters
+  Score: Raw -6537.441941 + Penalty 420.000000 = -6117.441941
+  nChanged 1
+		SP:Iteration 7Q (80.217000 sec): 3 clusters
+  Score: Raw -6539.107479 + Penalty 420.000000 = -6119.107479
+  nChanged 1
+		SP:Iteration 8Q (80.219000 sec): 3 clusters
+  Score: Raw -6540.768774 + Penalty 420.000000 = -6120.768774
+  nChanged 0
+		SP:Iteration 9F (80.222000 sec): 3 clusters
+  Score: Raw -6540.768774 + Penalty 420.000000 = -6120.768774
+  nChanged 0
+
+ Trying to split cluster 7 (5835 points) 
+	SP: Assigned 2 initial classes randomly.
+		SP:Iteration 0F (80.233000 sec): 2 clusters
+  Score: Raw -98671.114327 + Penalty 210.000000 = -98461.114327
+  nChanged 0
+	SP: Assigned 3 initial classes randomly.
+		SP:Iteration 0F (80.239000 sec): 3 clusters
+  Score: Raw -95237.923731 + Penalty 420.000000 = -94817.923731
+  nChanged 2582
+		SP:Iteration 1F (80.245000 sec): 3 clusters
+  Score: Raw -96888.301084 + Penalty 420.000000 = -96468.301084
+  nChanged 451
+		SP:Iteration 2F (80.290000 sec): 3 clusters
+  Score: Raw -97149.221032 + Penalty 420.000000 = -96729.221032
+  nChanged 391
+		SP:Iteration 3F (80.295000 sec): 3 clusters
+  Score: Raw -97380.353260 + Penalty 420.000000 = -96960.353260
+  nChanged 364
+		SP:Iteration 4F (80.300000 sec): 3 clusters
+  Score: Raw -97616.477486 + Penalty 420.000000 = -97196.477486
+  nChanged 357
+		SP:Iteration 5F (80.306000 sec): 3 clusters
+  Score: Raw -97895.445589 + Penalty 420.000000 = -97475.445589
+  nChanged 331
+		SP:Iteration 6F (80.311000 sec): 3 clusters
+  Score: Raw -98185.184395 + Penalty 420.000000 = -97765.184395
+  nChanged 238
+		SP:Iteration 7Q (80.316000 sec): 3 clusters
+  Score: Raw -98399.382453 + Penalty 420.000000 = -97979.382453
+  nChanged 154
+		SP:Iteration 8Q (80.323000 sec): 3 clusters
+  Score: Raw -98534.822156 + Penalty 420.000000 = -98114.822156
+  nChanged 107
+		SP:Iteration 9Q (80.329000 sec): 3 clusters
+  Score: Raw -98643.309831 + Penalty 420.000000 = -98223.309831
+  nChanged 56
+		SP:Iteration 10Q (80.361000 sec): 3 clusters
+  Score: Raw -98693.612834 + Penalty 420.000000 = -98273.612834
+  nChanged 27
+		SP:Iteration 11Q (80.367000 sec): 3 clusters
+  Score: Raw -98719.297589 + Penalty 420.000000 = -98299.297589
+  nChanged 11
+		SP:Iteration 12Q (80.372000 sec): 3 clusters
+  Score: Raw -98729.781991 + Penalty 420.000000 = -98309.781991
+  nChanged 9
+		SP:Iteration 13Q (80.380000 sec): 3 clusters
+  Score: Raw -98738.381130 + Penalty 420.000000 = -98318.381130
+  nChanged 6
+		SP:Iteration 14Q (80.386000 sec): 3 clusters
+  Score: Raw -98744.349244 + Penalty 420.000000 = -98324.349244
+  nChanged 3
+		SP:Iteration 15Q (80.390000 sec): 3 clusters
+  Score: Raw -98747.033604 + Penalty 420.000000 = -98327.033604
+  nChanged 0
+		SP:Iteration 16F (80.395000 sec): 3 clusters
+  Score: Raw -98747.033604 + Penalty 420.000000 = -98327.033604
+  nChanged 0
+Time taken for this iteration:76.085000 seconds.
+ 500->8 Clusters: Score -2720544.991319, best is 100000000000000010000000000000000.000000
+THE BEST YET!
+
+Main iterations: 123 (time per iteration =654.298539 ms)
+Total iterations: 865 (time per iteration =93.038983 ms)
+
+Def. Iteration metric 2:
+Iteration_metric2 += (scalar)(nDims*nDims)*(scalar)(nPoints)
+Iterations metric 2: 9794501639.000000 (time per metric unit =8.216724ns)
+
+Def. Iteration metric 3:
+Iteration_metric3 += (scalar)(nDims*nDims)*(scalar)(nDims*nPoints)
+Iterations metric 3: 127328521307.000000 (time per metric unit=632.055720ps)
+
+That took 80.478720 seconds.
