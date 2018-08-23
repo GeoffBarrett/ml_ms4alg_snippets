@@ -5,7 +5,7 @@ import os
 import numpy as np
 
 processor_name = 'ms4alg_snippets.sort'
-processor_version = '0.01'
+processor_version = '0.1.0'
 
 
 def sort(*,
