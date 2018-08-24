@@ -5,10 +5,11 @@ import sys
 import os
 import multiprocessing
 
-# import h5py
 import warnings
+
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import h5py
+
 warnings.resetwarnings()
 
 
@@ -51,7 +52,7 @@ def compute_template_channel_peaks(templates, *, detect_sign):
 
 
 def compute_sliding_maximum_snippet(snippets, radius=10):
-    """This will be a sliding maximum.
+    """This will be a sliding maximum. 
 
     It will return a nSpikes x clip_size matrix (ret), for each
     sample it will look at samples half of the radius before and half after
@@ -146,7 +147,7 @@ def detect_on_neighborhood_from_snippets_model(X, channel_number, *, nbhd_channe
 
     if detect_sign < 0:
         # negative peaks
-        np.multiply(data, -1)
+        data = np.multiply(data, -1)
     elif detect_sign == 0:
         # both negative and positive peaks
         data = np.abs(data)
@@ -169,6 +170,7 @@ def detect_on_neighborhood_from_snippets_model(X, channel_number, *, nbhd_channe
 
     # the sample number that refers to the spike events on the chosen channel
     times = max_inds[threshold_bool]
+
     # the snippet index number corresponding to that event
     clip_inds = clip_inds[threshold_bool]
 
@@ -194,7 +196,7 @@ def compute_event_features_from_snippets(X, times, clip_ind, *, nbhd_channels, c
     if times.size == 0:
         return np.array([])
 
-    # N=X.numTimepoints()
+        # N=X.numTimepoints()
     # X_neigh=X.getChunk(t1=0,t2=N,channels=nbhd_channels)
     M_neigh = len(nbhd_channels)
 
@@ -275,18 +277,6 @@ def compute_templates_from_snippets_model(X, times, clip_ind, labels, *, nbhd_ch
         if template_counts[k]:
             templates[:, :, k] = template_sums[:, :, k] / template_counts[k]
     return templates
-
-
-'''def create_chunk_infos(*,N,chunk_size):
-    chunk_infos=[]
-    num_chunks=int(np.ceil(N/chunk_size))
-    for i in range(num_chunks):
-        chunk={
-            't1':i*chunk_size,
-            't2':np.minimum(N,(i+1)*chunk_size)
-        }
-        chunk_infos.append(chunk)
-    return chunk_infos'''
 
 
 def create_chunk_infos(*, N):
@@ -380,7 +370,9 @@ class _NeighborhoodSorter:
         detect_interval = o['detect_interval']
         detect_sign = o['detect_sign']
         detect_threshold = o['detect_threshold']
-        num_features = 10  # TODO: make this a sorting opt
+        num_features = o['num_features']
+
+        # num_features=10 # TODO: make this a sorting opt
         geom = self._geom
         if geom is None:
             geom = np.zeros((M_global, 2))
@@ -389,7 +381,7 @@ class _NeighborhoodSorter:
         chunk_infos = create_chunk_infos(N=N)
 
         nbhd_channels = get_channel_neighborhood(m_central, geom, adjacency_radius=o['adjacency_radius'])
-        M_neigh = len(nbhd_channels)
+        # M_neigh = len(nbhd_channels)
         m_central_rel = np.where(nbhd_channels == m_central)[0][0]
 
         if mode == 'phase1':
@@ -415,12 +407,17 @@ class _NeighborhoodSorter:
                 for ii in range(self._num_assigned_event_time_arrays):
                     times_list.append(np.array(f.get('assigned-event-times-{}'.format(ii))))
                     clip_ind_list.append(np.array(f.get('assigned-event-clip_inds-{}'.format(ii))))
+
             times = np.concatenate(times_list) if times_list else np.array([])
+            times = times.astype(np.int64)  # force this to avoid index errors
             clip_ind = np.concatenate(clip_ind_list) if clip_ind_list else np.array([])
 
         print('Computing PCA features for channel {} ({})...'.format(m_central + 1, mode));
         sys.stdout.flush()
-        max_num_clips_for_pca = 1000  # TODO: this should be a setting somewhere
+
+        # max_num_clips_for_pca=1000 # TODO: this should be a setting somewhere
+        max_num_clips_for_pca = o['max_num_clips_for_pca']
+
         # Note: we use twice as many features, because of branch method (MT x F)
         features = compute_event_features_from_snippets(X, times, clip_ind, nbhd_channels=nbhd_channels,
                                                         clip_size=clip_size,
@@ -469,6 +466,7 @@ class _NeighborhoodSorter:
                                                                                               dt, k + 1));
                         sys.stdout.flush()
             # add the phase 1 values to the hdf5 file
+
             with h5py.File(self._hdf5_path, "a") as f:
                 f.create_dataset('phase1-times', data=times2)
                 f.create_dataset('phase1-clip_inds', data=clip_ind2)
@@ -572,6 +570,8 @@ class MountainSort4_snippets:
             "detect_sign": None,  # must be set explicitly
             "detect_interval": 10,
             "detect_threshold": 3,
+            "num_features": 10,
+            'max_num_clips_for_pca': 1000,
         }
         self._snippets = None
         self._firings_out_path = None
@@ -580,7 +580,7 @@ class MountainSort4_snippets:
         self._num_workers = 0
 
     def setSortingOpts(self, adjacency_radius=None, detect_sign=None, detect_interval=None, detect_threshold=None,
-                       clip_size=None):
+                       clip_size=None, num_features=None, max_num_clips_for_pca=None):
         if clip_size is not None:
             self._sorting_opts['clip_size'] = clip_size
         if adjacency_radius is not None:
@@ -591,6 +591,10 @@ class MountainSort4_snippets:
             self._sorting_opts['detect_interval'] = detect_interval
         if detect_threshold is not None:
             self._sorting_opts['detect_threshold'] = detect_threshold
+        if num_features is not None:
+            self._sorting_opts['num_features'] = num_features
+        if max_num_clips_for_pca is not None:
+            self._sorting_opts['max_num_clips_for_pca'] = max_num_clips_for_pca
 
     def setSnippetPath(self, snippets_path):
         self._snippets_path = snippets_path
@@ -615,7 +619,7 @@ class MountainSort4_snippets:
         if num_workers <= 0:
             num_workers = multiprocessing.cpu_count()
 
-        clip_size = self._sorting_opts['clip_size']
+        # clip_size = self._sorting_opts['clip_size']
 
         temp_hdf5_path = self._temporary_directory + '/snippets.hdf5'
         if os.path.exists(temp_hdf5_path):
@@ -700,6 +704,7 @@ class MountainSort4_snippets:
         all_clip_inds = all_clip_inds[sort_inds]
 
         chunk_infos = create_chunk_infos(N=N)
+
         all_times = get_real_times(X, all_times, time_channel=0, chunk_infos=chunk_infos)
 
         print('Writing firings file...');

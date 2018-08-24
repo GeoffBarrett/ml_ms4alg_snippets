@@ -56,7 +56,7 @@ def sort(*,
     # Read the header of the timeseries input to get the num. channels and num. timepoints
     X = mdaio.DiskReadMda(snippet_path)
     M = X.N1()-1  # Number of channels
-    N = X.N2()  # Number of timepoints
+    # N = X.N2()  # Number of timepoints
 
     # Read the geometry file
     if geom:
