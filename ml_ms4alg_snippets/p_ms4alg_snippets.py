@@ -8,7 +8,7 @@ processor_name='ms4alg_snippets.sort'
 processor_version='0.1.1'
 
 
-def sort_snippets(*,
+def sort(*,
          snippet_path, geom='',
          firings_out,
          adjacency_radius, detect_sign, clip_size,
@@ -74,6 +74,6 @@ def sort_snippets(*,
     return True
 
 
-sort_snippets.name=processor_name
-sort_snippets.version=processor_version
-sort_snippets.author = "Geoffrey Barrett"
+sort.name=processor_name
+sort.version=processor_version
+sort.author = "Geoffrey Barrett"
