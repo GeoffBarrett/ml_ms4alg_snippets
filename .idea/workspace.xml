@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="p_ms4alg_snippets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="p_ms4alg_snippets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ml_ms4alg_snippets/p_ms4alg_snippets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="221">
+              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="p_whiten_snippets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="p_whiten_snippets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ml_ms4alg_snippets/p_whiten_snippets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="669">
+              <caret line="108" column="14" lean-forward="false" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/ml_ms4alg_snippets/ms4alg_snippets.py" />
         <option value="$PROJECT_DIR$/ml_ms4alg_snippets/whiten_snippets.py" />
         <option value="$PROJECT_DIR$/ml_ms4alg_snippets/whiten_snippets_spec.py.mp" />
-        <option value="$PROJECT_DIR$/ml_ms4alg_snippets/p_whiten_snippets.py" />
         <option value="$PROJECT_DIR$/ml_ms4alg_snippets/p_ms4alg_snippets.py" />
+        <option value="$PROJECT_DIR$/ml_ms4alg_snippets/p_whiten_snippets.py" />
       </list>
     </option>
   </component>
@@ -457,20 +457,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ml_ms4alg_snippets/p_whiten_snippets.py">
+    <entry file="file://$PROJECT_DIR$/ml_ms4alg_snippets/p_ms4alg_snippets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ml_ms4alg_snippets/p_ms4alg_snippets.py">
+    <entry file="file://$PROJECT_DIR$/ml_ms4alg_snippets/p_whiten_snippets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="669">
+          <caret line="108" column="14" lean-forward="false" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

@@ -107,7 +107,6 @@ def whiten(*, timeseries, timeseries_out,
     Whiten a multi-channel timeseries
 
     Parameters
-
     ----------
     timeseries : INPUT
         MxN raw timeseries array (M = #channels, N = #timepoints)

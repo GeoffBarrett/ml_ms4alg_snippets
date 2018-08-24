@@ -17,17 +17,16 @@ def sort(*,
     """
     MountainSort spike sorting (version 4) - Snippets Version
 
-    INPUTS
+    Parameters
+    ----------
     snippet_path : INPUT
         M+1xN raw array containing snippets (M = #channels, N = #timepoints), the rows are the concatenated clips (across channels). The first row consist of the time (in sample number) that the snippet values were sampled at.
     geom : INPUT
         Optional geometry file (.csv format)
 
-    OUTPUTS
     firings_out : OUTPUT
         Firings array channels/times/labels/clip_index (4xL, L = num. events)
 
-    PARAMETERS
     adjacency_radius : float
         Radius of local sorting neighborhood, corresponding to the geometry file (same units). 0 means each channel is sorted independently. -1 means all channels are included in every neighborhood.
     detect_sign : int
