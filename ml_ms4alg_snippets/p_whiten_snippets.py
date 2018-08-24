@@ -105,6 +105,7 @@ def whiten(*, timeseries, timeseries_out,
            ):
     """
     Whiten a multi-channel timeseries
+
     Parameters
 
     ----------
