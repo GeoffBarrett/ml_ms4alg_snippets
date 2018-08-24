@@ -12,12 +12,12 @@ def sort(*,
          snippet_path, geom='',
          firings_out,
          adjacency_radius, detect_sign, clip_size,
-         detect_interval=10, detect_threshold=3,
+         detect_interval=10, detect_threshold=3, num_features=10, max_num_clips_for_pca=1000,
          num_workers=multiprocessing.cpu_count()):
     """
     MountainSort spike sorting (version 4) - Snippets Version
     Parameters
-    
+
     ----------
     snippet_path : INPUT
         M+1xN raw array containing snippets (M = #channels, N = #timepoints), the rows are the concatenated clips (across channels). The first row consist of the time (in sample number) that the snippet values were sampled at.
@@ -37,6 +37,10 @@ def sort(*,
         Threshold for event detection, corresponding to the input file. So if the input file is normalized to have noise standard deviation 1 (e.g., whitened), then this is in units of std. deviations away from the mean.
     detect_interval : int
         The minimum number of timepoints between adjacent spikes detected in the same channel neighborhood.
+    num_features : int
+        number of features to use when performing PCA
+    max_num_clips_for_pca: int
+        the max number of clips that will be subsampled to use for PCA.
     num_workers : int
         Number of simultaneous workers (or processes). The default is multiprocessing.cpu_count().
     """
@@ -66,7 +70,8 @@ def sort(*,
     MS4 = ms4alg_snippets.MountainSort4_snippets()
     MS4.setGeom(Geom)
     MS4.setSortingOpts(clip_size=clip_size, adjacency_radius=adjacency_radius, detect_sign=detect_sign,
-                       detect_interval=detect_interval, detect_threshold=detect_threshold)
+                       detect_interval=detect_interval, detect_threshold=detect_threshold,num_features=num_features,
+                       max_num_clips_for_pca=max_num_clips_for_pca)
     MS4.setNumWorkers(num_workers)
     MS4.setSnippetPath(snippet_path)
     MS4.setFiringsOutPath(firings_out)
