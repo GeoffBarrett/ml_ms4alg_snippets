@@ -17,6 +17,7 @@ def sort(*,
     """
     MountainSort spike sorting (version 4) - Snippets Version
     Parameters
+    
     ----------
     snippet_path : INPUT
         M+1xN raw array containing snippets (M = #channels, N = #timepoints), the rows are the concatenated clips (across channels). The first row consist of the time (in sample number) that the snippet values were sampled at.
