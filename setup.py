@@ -6,20 +6,20 @@ with open("README.md", "r") as fh:
 pkgs = setuptools.find_packages()
 print('found these packages:', pkgs)
 
-pkg_name="ml_ms4alg_snippets"
+pkg_name = "ml_ms4alg_snippets"
 
 setuptools.setup(
     name=pkg_name,
-    version="0.1.0",
+    version="0.1.11",
     author="Geoffrey Barrett",
-    author_email="",
+    author_email="gmbarrett313@gmail.com",
     description="Mountainsort v4 for MountainLab - Snippets Version",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/GeoffBarrett/ml_ms4alg_snippets",
     packages=pkgs,
     package_data={
-        '': ['*.mp'], # Include all processor files
+        '': ['*.mp'],  # Include all processor files
     },
     install_requires=
     [
@@ -44,7 +44,7 @@ setuptools.setup(
         ],
         "test_commands":[
             "ml-list-processors",
-            "ml-spec ms4alg.sort"
+            "ml-spec ms4alg_snippets.sort"
         ],
         "test_imports":[
         ],
