@@ -4,11 +4,11 @@ import ms4alg_snippets
 import os
 import numpy as np
 
-processor_name = 'ms4alg_snippets.sort'
-processor_version = '0.1.1'
+processor_name='ms4alg_snippets.sort'
+processor_version='0.1.1'
 
 
-def sort(*,
+def sort_snippets(*,
          snippet_path, geom='',
          firings_out,
          adjacency_radius, detect_sign, clip_size,
@@ -74,5 +74,6 @@ def sort(*,
     return True
 
 
-sort.name = processor_name
-sort.version = processor_version
+sort_snippets.name=processor_name
+sort_snippets.version=processor_version
+sort_snippets.author = "Geoffrey Barrett"

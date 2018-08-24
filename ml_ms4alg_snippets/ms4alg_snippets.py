@@ -5,11 +5,10 @@ import sys
 import os
 import multiprocessing
 
+# import h5py
 import warnings
-
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import h5py
-
 warnings.resetwarnings()
 
 
@@ -195,7 +194,7 @@ def compute_event_features_from_snippets(X, times, clip_ind, *, nbhd_channels, c
     if times.size == 0:
         return np.array([])
 
-        # N=X.numTimepoints()
+    # N=X.numTimepoints()
     # X_neigh=X.getChunk(t1=0,t2=N,channels=nbhd_channels)
     M_neigh = len(nbhd_channels)
 
@@ -600,7 +599,7 @@ class MountainSort4_snippets:
         self._firings_out_path = path
 
     def setNumWorkers(self, num_workers):
-        self._num_workers = num_workerssetTemporaryDirectory
+        self._num_workers = num_workers
 
     def setGeom(self, geom):
         self._geom = geom
