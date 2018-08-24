@@ -7,6 +7,7 @@ import os
 processor_name = 'ms4alg_snippets.whiten'
 processor_version = '0.1.0'
 
+
 class SharedChunkInfo():
     def __init__(self, num_chunks):
         self.timer_timestamp = multiprocessing.Value('d', time.time(), lock=False)
@@ -43,7 +44,7 @@ class SharedChunkInfo():
 def compute_AAt_matrix_for_chunk(num):
     opts = g_opts
     in_fname = opts['timeseries']  # The entire (large) input file
-    out_fname = opts['timeseries_out']  # The entire (large) output file
+    # out_fname = opts['timeseries_out']  # The entire (large) output file
     chunk_size = opts['chunk_size']
 
     X = mdaio.DiskReadMda(in_fname)
