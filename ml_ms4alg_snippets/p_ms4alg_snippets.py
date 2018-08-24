@@ -4,8 +4,8 @@ import ms4alg_snippets
 import os
 import numpy as np
 
-processor_name='ms4alg_snippets.sort'
-processor_version='0.1.1'
+processor_name = 'ms4alg_snippets.sort'
+processor_version = '0.1.1'
 
 
 def sort(*,
@@ -80,6 +80,6 @@ def sort(*,
     return True
 
 
-sort.name=processor_name
-sort.version=processor_version
+sort.name = processor_name
+sort.version = processor_version
 sort.author = "Geoffrey Barrett"
