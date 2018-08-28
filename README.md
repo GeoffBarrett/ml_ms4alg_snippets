@@ -5,6 +5,8 @@ MountainLab processor library
 
 Clone this repository into $CONDA_PREFIX/etc/mountainlab/packages directory
 
+## Installation
+
 Example: 
 ```
 cd ~/conda/envs/mlab/etc/mountainlab/packages
