@@ -39,7 +39,7 @@ def sort(*,
         The minimum number of timepoints between adjacent spikes detected in the same channel neighborhood.
     num_features : int
         number of features to use when performing PCA
-    max_num_clips_for_pca: int
+    max_num_clips_for_pca : int
         the max number of clips that will be subsampled to use for PCA.
     num_workers : int
         Number of simultaneous workers (or processes). The default is multiprocessing.cpu_count().
